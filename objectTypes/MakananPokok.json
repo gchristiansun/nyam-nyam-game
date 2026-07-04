@@ -1,0 +1,62 @@
+{
+	"name": "MakananPokok",
+	"plugin-id": "Sprite",
+	"sid": 146768583214836,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 357,
+						"height": 481,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8049666,
+						"collisionPoly": {
+							"points": [
+								0.19607843137254902,
+								0.029106029106029108,
+								0.8823529411764706,
+								0.037422037422037424,
+								0.9831932773109243,
+								0.13097713097713098,
+								0.9467787114845938,
+								0.9542619542619543,
+								0.8683473389355743,
+								0.9916839916839917,
+								0.27450980392156865,
+								0.9958419958419958,
+								0.17647058823529413,
+								0.9916839916839917,
+								0.04481792717086835,
+								0.8773388773388774,
+								0.11764705882352941,
+								0.04781704781704782
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 181425428473617,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

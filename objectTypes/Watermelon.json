@@ -1,0 +1,100 @@
+{
+	"name": "Watermelon",
+	"plugin-id": "Sprite",
+	"sid": 612309273962373,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "PostX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 291957500003560
+		},
+		{
+			"name": "PostY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 171409343502996
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 873393351288015
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 676156118688185
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 374,
+						"height": 299,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7094204,
+						"collisionPoly": {
+							"points": [
+								0.7994652406417112,
+								0.2140468227424749,
+								0.839572192513369,
+								0.34782608695652173,
+								0.839572192513369,
+								0.4180602006688963,
+								0.7540106951871658,
+								0.6387959866220736,
+								0.7219251336898396,
+								0.6789297658862876,
+								0.6657754010695187,
+								0.7290969899665551,
+								0.6256684491978609,
+								0.7558528428093646,
+								0.5561497326203209,
+								0.7859531772575251,
+								0.4786096256684492,
+								0.802675585284281,
+								0.3716577540106952,
+								0.802675585284281,
+								0.30213903743315507,
+								0.7859531772575251,
+								0.24331550802139038,
+								0.7558528428093646,
+								0.20588235294117646,
+								0.7224080267558528,
+								0.16042780748663102,
+								0.6655518394648829,
+								0.10160427807486631,
+								0.46488294314381273
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 859614099094058,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

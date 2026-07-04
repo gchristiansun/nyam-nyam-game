@@ -1,0 +1,64 @@
+{
+	"name": "AirPutih",
+	"plugin-id": "Sprite",
+	"sid": 909021897837272,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 357,
+						"height": 481,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4950236,
+						"collisionPoly": {
+							"points": [
+								0.1484593837535014,
+								0.02494802494802495,
+								0.8543417366946778,
+								0.02702702702702703,
+								0.9103641456582633,
+								0.04365904365904366,
+								0.9775910364145658,
+								0.12058212058212059,
+								0.8879551820728291,
+								0.9812889812889813,
+								0.8403361344537815,
+								0.9916839916839917,
+								0.12885154061624648,
+								0.9875259875259875,
+								0.028011204481792718,
+								0.9293139293139293,
+								0.011204481792717087,
+								0.8898128898128899,
+								0.07282913165266107,
+								0.04781704781704782
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 271535746231092,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

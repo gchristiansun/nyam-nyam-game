@@ -43,8 +43,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -76,7 +90,40 @@
 			"dialogNaurizaScene2",
 			"Text",
 			"dialogNauriza2",
-			"Sprite6"
+			"Sprite6",
+			"Backgroundv2",
+			"BackgroundBoard",
+			"ButtonSelectChar",
+			"SettingButton",
+			"InfoButton",
+			"CharName",
+			"CharName1",
+			"BackButton",
+			"CharacterFemale",
+			"CharacterMale",
+			"CardMale",
+			"CardFemale",
+			"Title",
+			"topleft025circle2",
+			"Star",
+			"Level",
+			"Brokoli",
+			"Rice",
+			"Watermelon",
+			"Ikan",
+			"WaterDrag",
+			"topright025circle",
+			"buttomleft025circle",
+			"buttomright025circle",
+			"ButtonSelesai",
+			"MakananPokok",
+			"AirPutih",
+			"LaukPauk",
+			"Sayuran",
+			"Buah",
+			"DataChar",
+			"Plate",
+			"BackgroundMain2"
 		],
 		"subfolders": []
 	},
@@ -92,8 +139,10 @@
 			"Home",
 			"Toko",
 			"Level",
+			"Scene Main",
+			"Nauriza's Scene2",
 			"Nauriza's Scene",
-			"Nauriza's Scene2"
+			"ChooseCharacter"
 		],
 		"subfolders": []
 	},
@@ -103,7 +152,9 @@
 			"Toko",
 			"Level",
 			"Nauriza's Scene",
-			"Nauriza's Scene2"
+			"Nauriza's Scene2",
+			"Event sheet 1",
+			"Drag and Drop"
 		],
 		"subfolders": []
 	},

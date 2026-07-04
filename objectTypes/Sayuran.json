@@ -1,0 +1,60 @@
+{
+	"name": "Sayuran",
+	"plugin-id": "Sprite",
+	"sid": 175392109073065,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 356,
+						"height": 481,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5538370,
+						"collisionPoly": {
+							"points": [
+								0.15168539325842698,
+								0.029106029106029108,
+								0.949438202247191,
+								0.12681912681912683,
+								0.8679775280898876,
+								0.9833679833679834,
+								0.8202247191011236,
+								0.9958419958419958,
+								0.1348314606741573,
+								0.9958419958419958,
+								0,
+								0.9126819126819127,
+								0.03932584269662921,
+								0.06444906444906445,
+								0.10393258426966293,
+								0.035343035343035345
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 378705800310191,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

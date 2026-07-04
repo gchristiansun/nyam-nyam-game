@@ -1,0 +1,52 @@
+{
+	"name": "BackgroundBoard",
+	"plugin-id": "Sprite",
+	"sid": 303323760627624,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3495,
+						"height": 2330,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8315210,
+						"collisionPoly": {
+							"points": [
+								0.10271816881258941,
+								0.15150214592274677,
+								0.9247496423462088,
+								0.19141630901287554,
+								0.8969957081545065,
+								0.8824034334763948,
+								0.07811158798283262,
+								0.8579399141630901
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 228003469476216,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

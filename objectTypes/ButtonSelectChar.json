@@ -1,0 +1,52 @@
+{
+	"name": "ButtonSelectChar",
+	"plugin-id": "Sprite",
+	"sid": 720339965415275,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1044,
+						"height": 212,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7137967,
+						"collisionPoly": {
+							"points": [
+								0.07471264367816093,
+								0.07547169811320754,
+								0.9636015325670498,
+								0.12264150943396226,
+								0.9415708812260536,
+								0.9481132075471698,
+								0.05747126436781609,
+								0.9386792452830188
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 703176475936092,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
