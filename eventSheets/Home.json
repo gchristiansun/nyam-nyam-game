@@ -1,0 +1,306 @@
+{
+	"name": "Home",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Navigasi Mulai",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 802268046763770,
+							"parameters": {
+								"object": "btnMulai",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "btnMulai",
+							"sid": 893792846607260,
+							"parameters": {
+								"width": "629",
+								"height": "262"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 926768798699546,
+							"parameters": {
+								"seconds": "0.1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "btnMulai",
+							"sid": 661560969240427,
+							"parameters": {
+								"width": "639",
+								"height": "272"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 421193018073085,
+							"parameters": {
+								"layout": "Level"
+							}
+						}
+					],
+					"sid": 159021352653576
+				}
+			],
+			"sid": 367470052191946
+		},
+		{
+			"eventType": "variable",
+			"name": "Music",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 483749494259155
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Music",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 660105181662149,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "btnSoundOff",
+							"sid": 191290067550235,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 773529239528603,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-tag-playing",
+									"objectClass": "Audio",
+									"sid": 313607263563011,
+									"parameters": {
+										"tag": "\"Backsound\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 833394881088001,
+									"parameters": {
+										"audio-file": {
+											"path": "_MConverter.eu_music menu"
+										},
+										"loop": "looping",
+										"volume": "-5",
+										"stereo-pan": "0",
+										"tag-optional": "\"Backsound\""
+									}
+								}
+							],
+							"sid": 510138292742598
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 227559881338073,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "btnSoundOff",
+							"sid": 136114102320650,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 978895202294596,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 793394739229748
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 131696213023374
+								}
+							],
+							"sid": 562824421352783
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 164774405774915,
+							"parameters": {
+								"object": "btnSoundOff",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "btnSoundOff",
+							"sid": 894883009874145,
+							"parameters": {
+								"width": "219",
+								"height": "147"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 481678762518744,
+							"parameters": {
+								"seconds": "0.1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "btnSoundOff",
+							"sid": 971741467418241,
+							"parameters": {
+								"width": "210",
+								"height": "137"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 406857227814056,
+							"parameters": {
+								"variable": "Music",
+								"value": "1 - Music"
+							}
+						}
+					],
+					"sid": 928333430900075
+				}
+			],
+			"sid": 265867418333077
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Navigasi Toko",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 603312045741263,
+							"parameters": {
+								"object": "btnToko",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "btnToko",
+							"sid": 366760704330674,
+							"parameters": {
+								"scale": "0.9"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 878290062964717,
+							"parameters": {
+								"seconds": "0.1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "btnToko",
+							"sid": 884530836631268,
+							"parameters": {
+								"scale": "1"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 196546673562563,
+							"parameters": {
+								"layout": "Toko"
+							}
+						}
+					],
+					"sid": 537535708083780
+				}
+			],
+			"sid": 435493929329875
+		}
+	],
+	"sid": 524345953350395
+}
