@@ -1,7 +1,7 @@
 {
 	"name": "Star",
 	"plugin-id": "Sprite",
-	"sid": 485286910320108,
+	"sid": 454594735807109,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4010177,
+						"imageSpriteId": 170500,
 						"collisionPoly": {
 							"points": [
 								0.1448692152917505,
@@ -44,7 +44,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 411533008164654,
+				"sid": 600849240072027,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

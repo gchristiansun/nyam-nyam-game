@@ -1,18 +1,11 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 48703,
-	"name": "NyamNyam",
+	"name": "nyamnyam-project",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
-		{
-			"type": "plugin",
-			"id": "Audio",
-			"name": "Audio",
-			"author": "Scirra",
-			"bundled": false
-		},
 		{
 			"type": "plugin",
 			"id": "Sprite",
@@ -50,60 +43,53 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		}
 	],
-	"uniqueId": "4lcqgkdqux6",
+	"uniqueId": "hi8ngrsq7bz",
 	"objectTypes": {
 		"items": [
+			"layout_level",
+			"touch",
+			"star_empty",
+			"button_kembali",
+			"main_menu",
+			"star_result",
+			"star_result2",
+			"star_result3",
+			"Scene1",
+			"RIko_1",
+			"bubble_dialog",
+			"bubble_chat_riko",
+			"button_kembali_animasi",
+			"button_next_dialog2",
+			"Scene2",
+			"Riko_2",
+			"bubble_dialog2",
+			"bubble_chat_Riko_2",
 			"TiledBackground",
-			"bgHome",
-			"btnMulai",
-			"logoNyamNyam",
-			"btnToko",
 			"Sprite",
+			"bubble_dialog3",
+			"bubble_chat_Riko_3",
+			"button_next_dialog3",
 			"Sprite2",
-			"btnSoundOn",
-			"btnSoundOff",
-			"Sprite5",
-			"Touch",
-			"Audio",
-			"TiledBackground2",
-			"TiledBackground3",
-			"TiledBackground4",
-			"TiledBackground5",
-			"Sprite3",
-			"dialogNauriza",
-			"btnSkip",
-			"TiledBackground6",
-			"Sprite4",
-			"dialogNaurizaScene2",
-			"Text",
-			"dialogNauriza2",
-			"Sprite6",
-			"Backgroundv2",
-			"BackgroundBoard",
-			"ButtonSelectChar",
+			"btnKembali",
 			"SettingButton",
 			"InfoButton",
 			"CharName",
 			"CharName1",
 			"BackButton",
+			"ButtonSelectChar",
 			"CharacterFemale",
 			"CharacterMale",
 			"CardMale",
 			"CardFemale",
 			"Title",
+			"BackgroundBoard",
+			"Backgroundv2",
 			"topleft025circle2",
 			"Star",
 			"Level",
@@ -121,15 +107,10 @@
 			"LaukPauk",
 			"Sayuran",
 			"Buah",
-			"DataChar",
+			"LogoNyamNyam",
 			"Plate",
-			"BackgroundMain2",
-			"star_result",
-			"star_result2",
-			"star_result3",
-			"star_empty",
-			"button_kembali",
-			"layout_level"
+			"DataChar",
+			"BackgroundMain2"
 		],
 		"subfolders": []
 	},
@@ -142,25 +123,23 @@
 	},
 	"layouts": {
 		"items": [
-			"Home",
-			"Toko",
-			"Level",
-			"Scene Main",
-			"Nauriza's Scene2",
-			"Nauriza's Scene",
-			"ChooseCharacter123"
+			"level",
+			"choose Char",
+			"Scene Riko",
+			"Scene Riko 2",
+			"Scene Riko 3",
+			"Gameplay"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Home",
-			"Toko",
-			"Level",
-			"Nauriza's Scene",
-			"Nauriza's Scene2",
-			"Event sheet 1",
-			"Drag and Drop"
+			"level",
+			"Scene Riko",
+			"Scene Riko 2",
+			"Scene Riko 3",
+			"Choose Char",
+			"Game"
 		],
 		"subfolders": []
 	},
@@ -174,24 +153,7 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [
-				{
-					"name": "music menu.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 781756458400107,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "_MConverter.eu_music menu.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 873622209332141,
-					"file-info": {
-						"purpose": "none"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": []
 		},
 		"video": {
@@ -199,23 +161,32 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Baloo2-ExtraBold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 632651884608151,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {
 			"items": [
 				{
-					"name": "icon-32.png",
+					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 839791050330409,
+					"sid": 911634254778792,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
 				},
 				{
-					"name": "icon-16.png",
+					"name": "icon-32.png",
 					"type": "image/png",
-					"sid": 451310681055137,
+					"sid": 741080074109745,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -223,15 +194,7 @@
 				{
 					"name": "icon-64.png",
 					"type": "image/png",
-					"sid": 964131133243408,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 279339278786466,
+					"sid": 719327644150007,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -239,7 +202,15 @@
 				{
 					"name": "icon-128.png",
 					"type": "image/png",
-					"sid": 333996780062394,
+					"sid": 194703919890533,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 931740529958979,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -247,7 +218,7 @@
 				{
 					"name": "icon-512.png",
 					"type": "image/png",
-					"sid": 772540280803539,
+					"sid": 414448849680268,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -255,7 +226,7 @@
 				{
 					"name": "loading-logo.png",
 					"type": "image/png",
-					"sid": 509088889304095,
+					"sid": 623523301962657,
 					"icon-info": {
 						"purpose": "loading-logo"
 					}

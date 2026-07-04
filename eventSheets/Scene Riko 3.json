@@ -1,0 +1,78 @@
+{
+	"name": "Scene Riko 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 376672194723600
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "bubble_chat_Riko_3",
+					"sid": 442351897761380,
+					"parameters": {
+						"text": "\"Yuk, bantu aku memilih dan memenuhi kebutuhan gizi ku\"",
+						"duration": "3"
+					}
+				}
+			],
+			"sid": 896336206938461
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "touch",
+					"sid": 695897623162264,
+					"parameters": {
+						"object": "button_next_dialog3",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 847671903135881,
+					"parameters": {
+						"layout": "Gameplay"
+					}
+				}
+			],
+			"sid": 324034255167193
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "touch",
+					"sid": 297374918079501,
+					"parameters": {
+						"object": "btnKembali",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 900395157069441,
+					"parameters": {
+						"layout": "Scene Riko 2"
+					}
+				}
+			],
+			"sid": 372985707203462
+		}
+	],
+	"sid": 995561078700033
+}

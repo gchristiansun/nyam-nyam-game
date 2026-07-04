@@ -1,5 +1,5 @@
 {
-	"name": "Level",
+	"name": "level",
 	"events": [
 		{
 			"eventType": "variable",
@@ -9,7 +9,7 @@
 			"comment": "untuk menampilkan bintang ",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 440190813653278
+			"sid": 433419777669474
 		},
 		{
 			"eventType": "variable",
@@ -19,524 +19,376 @@
 			"comment": "hasil permainan",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 670048459517141
+			"sid": 303279921042335
 		},
 		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "System Star",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+			"eventType": "block",
+			"conditions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-touched-object",
-							"objectClass": "Touch",
-							"sid": 362532307940237,
-							"parameters": {
-								"object": "button_kembali",
-								"type": "start"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 966327662975177,
-							"parameters": {
-								"layout": "Home"
-							}
-						}
-					],
-					"sid": 197172392716298,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 734848687701931,
-									"parameters": {
-										"variable": "level_1",
-										"comparison": 5,
-										"value": "90"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 700107350333889,
-									"parameters": {
-										"variable": "star_system",
-										"value": "3"
-									}
-								}
-							],
-							"sid": 967252216113277
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 252956269800137,
-									"parameters": {
-										"variable": "level_1",
-										"comparison": 5,
-										"value": "75"
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 546450788771478,
-									"parameters": {
-										"variable": "level_1",
-										"comparison": 2,
-										"value": "90"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 684571856697776,
-									"parameters": {
-										"variable": "star_system",
-										"value": "2"
-									}
-								}
-							],
-							"sid": 291778796862993
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 109263667280765,
-									"parameters": {
-										"variable": "level_1",
-										"comparison": 5,
-										"value": "75"
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 764393379471354,
-									"parameters": {
-										"variable": "level_1",
-										"comparison": 3,
-										"value": "60"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 640939513660930,
-									"parameters": {
-										"variable": "star_system",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 157586127734622
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 861568663284950,
-									"parameters": {
-										"variable": "level_1",
-										"comparison": 2,
-										"value": "60"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 485958302896687,
-									"parameters": {
-										"variable": "star_system",
-										"value": "0"
-									}
-								}
-							],
-							"sid": 808626557114892
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 841131794508468
-								}
-							],
-							"actions": [],
-							"sid": 473888028614748
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-opacity",
-							"objectClass": "star_result",
-							"sid": 189508160670730,
-							"parameters": {
-								"comparison": 0,
-								"opacity": "20"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 789226646263304
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-opacity",
-							"objectClass": "star_result2",
-							"sid": 775056762349190,
-							"parameters": {
-								"comparison": 0,
-								"opacity": "20"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 527109241354256
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-opacity",
-							"objectClass": "star_result3",
-							"sid": 891932963117364,
-							"parameters": {
-								"comparison": 0,
-								"opacity": "20"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 332341039363674,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-start-of-layout",
-									"objectClass": "System",
-									"sid": 430983696714350
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "star_result",
-									"sid": 839290012306253,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "star_result2",
-									"sid": 200150770828012,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "star_result3",
-									"sid": 573114849263031,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 378055292620655
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 639328234684841,
-									"parameters": {
-										"variable": "star_system",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "star_result",
-									"sid": 724484241305287,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 457596853212655
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 318178945263229,
-									"parameters": {
-										"variable": "star_system",
-										"comparison": 0,
-										"value": "2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "star_result",
-									"sid": 366459948996595,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "star_result2",
-									"sid": 992801381115241,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 226985478397609
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 755631939148498,
-									"parameters": {
-										"variable": "star_system",
-										"comparison": 0,
-										"value": "3"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "star_result",
-									"sid": 344116424840166,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "star_result2",
-									"sid": 236894031293302,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "star_result3",
-									"sid": 935928339345620,
-									"parameters": {
-										"visibility": "visible"
-									}
-								}
-							],
-							"sid": 135758811874441
-						}
-					]
+					"id": "on-touched-object",
+					"objectClass": "touch",
+					"sid": 877636483625005,
+					"parameters": {
+						"object": "button_kembali",
+						"type": "start"
+					}
 				}
 			],
-			"sid": 591234848246084
+			"actions": [],
+			"sid": 685110859529132
 		},
 		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Music2",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+			"eventType": "block",
+			"conditions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 627325054553985,
-							"parameters": {
-								"variable": "Music",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "btnSoundOff",
-							"sid": 982770260844290,
-							"parameters": {
-								"frame-number": "1"
-							}
-						}
-					],
-					"sid": 200273122417615,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-tag-playing",
-									"objectClass": "Audio",
-									"sid": 139665972693255,
-									"parameters": {
-										"tag": "\"Backsound\""
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 175933342947835,
-									"parameters": {
-										"audio-file": {
-											"path": "_MConverter.eu_music menu"
-										},
-										"loop": "looping",
-										"volume": "-5",
-										"stereo-pan": "0",
-										"tag-optional": "\"Backsound\""
-									}
-								}
-							],
-							"sid": 357934793955731
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 208006796819705,
-							"parameters": {
-								"variable": "Music",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "btnSoundOff",
-							"sid": 361219997423671,
-							"parameters": {
-								"frame-number": "0"
-							}
-						}
-					],
-					"sid": 818579072625090,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 866814258412677
-								}
-							],
-							"actions": [
-								{
-									"id": "stop-all",
-									"objectClass": "Audio",
-									"sid": 618152623340273
-								}
-							],
-							"sid": 534417092005750
-						}
-					]
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 494481690963091,
+					"parameters": {
+						"variable": "level_1",
+						"comparison": 5,
+						"value": "90"
+					}
 				}
 			],
-			"sid": 327109412411566
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 118036247674269,
+					"parameters": {
+						"variable": "star_system",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 118563030510218
 		},
 		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Navigasi System",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+			"eventType": "block",
+			"conditions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-touched-object",
-							"objectClass": "Touch",
-							"sid": 270367321843996,
-							"parameters": {
-								"object": "star_empty",
-								"type": "start"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 164088433858720,
-							"parameters": {
-								"layout": "Level"
-							}
-						}
-					],
-					"sid": 810902372305285
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 685701498405301,
+					"parameters": {
+						"variable": "level_1",
+						"comparison": 5,
+						"value": "75"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 501775812332428,
+					"parameters": {
+						"variable": "level_1",
+						"comparison": 2,
+						"value": "90"
+					}
 				}
 			],
-			"sid": 207849803766398
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 352033655043857,
+					"parameters": {
+						"variable": "star_system",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 915268878303209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 653672928287221,
+					"parameters": {
+						"variable": "level_1",
+						"comparison": 5,
+						"value": "75"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 163347990925885,
+					"parameters": {
+						"variable": "level_1",
+						"comparison": 3,
+						"value": "60"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 252324634924750,
+					"parameters": {
+						"variable": "star_system",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 700954149026317
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 103948557098886,
+					"parameters": {
+						"variable": "level_1",
+						"comparison": 2,
+						"value": "60"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 841593453736459,
+					"parameters": {
+						"variable": "star_system",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 501529920920965
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 972936268555205
+				}
+			],
+			"actions": [],
+			"sid": 782048141828150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-opacity",
+					"objectClass": "star_result",
+					"sid": 106043248454732,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "20"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 194856681692195
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-opacity",
+					"objectClass": "star_result2",
+					"sid": 747163854870157,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "20"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 100923582286078
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-opacity",
+					"objectClass": "star_result3",
+					"sid": 679916071515381,
+					"parameters": {
+						"comparison": 0,
+						"opacity": "20"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 779443947056579
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 942889854737535
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 804160419118162,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 498277330094441,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result3",
+					"sid": 161386846733850,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 327026641666572
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 822294315185267,
+					"parameters": {
+						"variable": "star_system",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 764322031914913,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 404989969927240
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 785633745728849,
+					"parameters": {
+						"variable": "star_system",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 769858998918069,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 299463251964079,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 163324960700503
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 462871349681571,
+					"parameters": {
+						"variable": "star_system",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 951993919036410,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 175403361183971,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result3",
+					"sid": 472117553037149,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 533920410437221
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "touch",
+					"sid": 421862056865379,
+					"parameters": {
+						"object": "star_empty",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 857065697235624,
+					"parameters": {
+						"layout": "choose Char"
+					}
+				}
+			],
+			"sid": 484868063479867
 		}
 	],
-	"sid": 100678311195035
+	"sid": 591121681778640
 }

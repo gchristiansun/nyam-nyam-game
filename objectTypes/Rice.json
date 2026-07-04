@@ -1,7 +1,7 @@
 {
 	"name": "Rice",
 	"plugin-id": "Sprite",
-	"sid": 131371873042761,
+	"sid": 668788045353991,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,33 +10,33 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 733562426742691
+			"sid": 138271465176676
 		},
 		{
 			"name": "PostY",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 649916639693694
+			"sid": 884782561173784
 		},
 		{
 			"name": "category",
 			"type": "string",
 			"desc": "",
 			"show": true,
-			"sid": 644514113367503
+			"sid": 949266052717495
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 257260757368633
+			"sid": 695483185437162
 		},
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 119234671066718
+			"sid": 866291004156010
 		}
 	],
 	"effectTypes": [],
@@ -53,7 +53,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4895515,
+						"imageSpriteId": 3492704,
 						"collisionPoly": {
 							"points": [
 								0.4254545454545455,
@@ -103,7 +103,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 514133737266808,
+				"sid": 120167504698136,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

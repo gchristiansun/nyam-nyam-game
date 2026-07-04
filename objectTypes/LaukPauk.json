@@ -1,7 +1,7 @@
 {
 	"name": "LaukPauk",
 	"plugin-id": "Sprite",
-	"sid": 511215206111586,
+	"sid": 257117469949759,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2064374,
+						"imageSpriteId": 8165040,
 						"collisionPoly": {
 							"points": [
 								0.1797752808988764,
@@ -46,7 +46,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 882934644982153,
+				"sid": 663618768818400,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

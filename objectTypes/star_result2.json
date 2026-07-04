@@ -1,7 +1,7 @@
 {
 	"name": "star_result2",
 	"plugin-id": "Sprite",
-	"sid": 146844434262022,
+	"sid": 202173577178472,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9998013,
+						"imageSpriteId": 5293001,
 						"collisionPoly": {
 							"points": [
 								0.5191489361702127,
@@ -42,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 163070782440041,
+				"sid": 191631960648156,
 				"name": "star_fill",
 				"isLooping": false,
 				"isPingPong": false,

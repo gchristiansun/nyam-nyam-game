@@ -1,7 +1,7 @@
 {
 	"name": "BackButton",
 	"plugin-id": "Sprite",
-	"sid": 718365750559178,
+	"sid": 737196108219116,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4000586,
+						"imageSpriteId": 2431496,
 						"collisionPoly": {
 							"points": [
 								0.4440789473684211,
@@ -84,7 +84,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 687859787743717,
+				"sid": 588521018724427,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

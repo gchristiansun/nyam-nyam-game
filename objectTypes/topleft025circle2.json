@@ -1,7 +1,7 @@
 {
 	"name": "topleft025circle2",
 	"plugin-id": "Sprite",
-	"sid": 558634199279804,
+	"sid": 992060749458260,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "string",
 			"desc": "",
 			"show": true,
-			"sid": 880463720909842
+			"sid": 814181682547618
 		}
 	],
 	"behaviorTypes": [],
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8026624,
+						"imageSpriteId": 4826863,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 685460962287555,
+				"sid": 750164541229621,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

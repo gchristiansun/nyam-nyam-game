@@ -1,7 +1,7 @@
 {
 	"name": "BackgroundBoard",
 	"plugin-id": "Sprite",
-	"sid": 303323760627624,
+	"sid": 759677118262654,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8315210,
+						"imageSpriteId": 9528470,
 						"collisionPoly": {
 							"points": [
 								0.10271816881258941,
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 228003469476216,
+				"sid": 173082869189594,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

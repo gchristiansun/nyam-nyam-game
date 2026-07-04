@@ -1,7 +1,7 @@
 {
 	"name": "InfoButton",
 	"plugin-id": "Sprite",
-	"sid": 223699606296151,
+	"sid": 132124540774578,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3962630,
+						"imageSpriteId": 2244113,
 						"collisionPoly": {
 							"points": [
 								0.45652173913043476,
@@ -82,7 +82,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 848391288150852,
+				"sid": 871931209595632,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

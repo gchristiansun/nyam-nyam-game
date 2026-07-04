@@ -1,7 +1,7 @@
 {
 	"name": "layout_level",
 	"plugin-id": "TiledBg",
-	"sid": 345137610252007,
+	"sid": 540105800509499,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -16,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 435936,
+		"imageSpriteId": 9206892,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

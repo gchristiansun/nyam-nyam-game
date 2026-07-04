@@ -1,7 +1,7 @@
 {
 	"name": "MakananPokok",
 	"plugin-id": "Sprite",
-	"sid": 146768583214836,
+	"sid": 144717137065791,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8049666,
+						"imageSpriteId": 2775864,
 						"collisionPoly": {
 							"points": [
 								0.19607843137254902,
@@ -48,7 +48,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 181425428473617,
+				"sid": 116368377589963,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

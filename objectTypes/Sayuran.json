@@ -1,7 +1,7 @@
 {
 	"name": "Sayuran",
 	"plugin-id": "Sprite",
-	"sid": 175392109073065,
+	"sid": 770984980145773,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5538370,
+						"imageSpriteId": 6155710,
 						"collisionPoly": {
 							"points": [
 								0.15168539325842698,
@@ -46,7 +46,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 378705800310191,
+				"sid": 479653506175526,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

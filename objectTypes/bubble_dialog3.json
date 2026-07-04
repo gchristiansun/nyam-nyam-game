@@ -1,7 +1,7 @@
 {
 	"name": "bubble_dialog3",
 	"plugin-id": "Sprite",
-	"sid": 842375479437174,
+	"sid": 535005529185394,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7179555,
+						"imageSpriteId": 8617450,
 						"collisionPoly": {
 							"points": [
 								0.1509303928325293,
@@ -52,7 +52,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 309206781206653,
+				"sid": 284767208950658,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

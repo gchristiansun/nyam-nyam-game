@@ -1,7 +1,7 @@
 {
 	"name": "Level",
 	"plugin-id": "Sprite",
-	"sid": 229211482882025,
+	"sid": 839160057403964,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5199460,
+						"imageSpriteId": 3642068,
 						"collisionPoly": {
 							"points": [
 								0.15694164989939638,
@@ -44,7 +44,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 636158035821332,
+				"sid": 556349315352090,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

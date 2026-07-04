@@ -1,7 +1,7 @@
 {
 	"name": "ButtonSelectChar",
 	"plugin-id": "Sprite",
-	"sid": 720339965415275,
+	"sid": 302674547266465,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7137967,
+						"imageSpriteId": 9142416,
 						"collisionPoly": {
 							"points": [
 								0.07471264367816093,
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 703176475936092,
+				"sid": 188400319264726,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

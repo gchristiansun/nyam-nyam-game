@@ -1,14 +1,14 @@
 {
-	"name": "Touch",
+	"name": "touch",
 	"plugin-id": "Touch",
-	"sid": 340065721848390,
+	"sid": 822449176974967,
 	"singleglobal-inst": {
-		"type": "Touch",
+		"type": "touch",
 		"properties": {
 			"use-mouse-input": true
 		},
-		"uid": 11,
-		"sid": 432137276997329,
+		"uid": 3,
+		"sid": 874955077365757,
 		"tags": ""
 	}
 }

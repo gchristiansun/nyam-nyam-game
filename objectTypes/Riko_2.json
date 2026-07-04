@@ -1,7 +1,7 @@
 {
 	"name": "Riko_2",
 	"plugin-id": "Sprite",
-	"sid": 846832966156139,
+	"sid": 605908551700290,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5015818,
+						"imageSpriteId": 377107,
 						"collisionPoly": {
 							"points": [
 								0.4634716540035067,
@@ -52,7 +52,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 421102035609782,
+				"sid": 315619061380195,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

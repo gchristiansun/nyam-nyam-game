@@ -1,7 +1,7 @@
 {
 	"name": "AirPutih",
 	"plugin-id": "Sprite",
-	"sid": 909021897837272,
+	"sid": 393733184294802,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4950236,
+						"imageSpriteId": 7373556,
 						"collisionPoly": {
 							"points": [
 								0.1484593837535014,
@@ -50,7 +50,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 271535746231092,
+				"sid": 290436951563286,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

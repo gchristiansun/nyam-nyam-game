@@ -1,0 +1,78 @@
+{
+	"name": "Scene Riko 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 578833235009557
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "bubble_chat_Riko_2",
+					"sid": 484198419932091,
+					"parameters": {
+						"text": "\"Aku berlatih sepak bola dan melakukan berbagai latihan setiap hari, supaya bisa jadi atlet sepak bola yang hebat.\r\n\"",
+						"duration": "3"
+					}
+				}
+			],
+			"sid": 275381034487192
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "touch",
+					"sid": 662131164275798,
+					"parameters": {
+						"object": "button_next_dialog2",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 473755505116776,
+					"parameters": {
+						"layout": "Scene Riko 3"
+					}
+				}
+			],
+			"sid": 298108695105217
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "touch",
+					"sid": 608122344843695,
+					"parameters": {
+						"object": "btnKembali",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 781585814225882,
+					"parameters": {
+						"layout": "Scene Riko"
+					}
+				}
+			],
+			"sid": 453002191531271
+		}
+	],
+	"sid": 561455165976103
+}

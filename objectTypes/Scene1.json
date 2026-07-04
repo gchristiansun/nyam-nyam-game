@@ -1,7 +1,7 @@
 {
 	"name": "Scene1",
 	"plugin-id": "TiledBg",
-	"sid": 604712671499018,
+	"sid": 260196180230092,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -16,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 5833994,
+		"imageSpriteId": 3781229,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

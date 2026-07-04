@@ -1,7 +1,7 @@
 {
 	"name": "button_next_dialog2",
 	"plugin-id": "Sprite",
-	"sid": 474642429430979,
+	"sid": 262124005615606,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7188441,
+						"imageSpriteId": 1827250,
 						"collisionPoly": {
 							"points": [
 								0.4547413793103448,
@@ -88,7 +88,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 101218885393774,
+				"sid": 191043841131094,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

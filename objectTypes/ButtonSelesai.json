@@ -1,7 +1,7 @@
 {
 	"name": "ButtonSelesai",
 	"plugin-id": "Sprite",
-	"sid": 976213023419753,
+	"sid": 560825633874899,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2508735,
+						"imageSpriteId": 2862529,
 						"collisionPoly": {
 							"points": [
 								0.17509727626459143,
@@ -50,7 +50,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 876517642366883,
+				"sid": 865002292042472,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

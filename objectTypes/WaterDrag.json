@@ -1,7 +1,7 @@
 {
 	"name": "WaterDrag",
 	"plugin-id": "Sprite",
-	"sid": 233340007550432,
+	"sid": 558115595200712,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,26 +10,26 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 520579339432537
+			"sid": 293403852642863
 		},
 		{
 			"name": "PostY",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 239276255866812
+			"sid": 402059860067032
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 839849142146902
+			"sid": 763858500265920
 		},
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 126646366496977
+			"sid": 610261306570468
 		}
 	],
 	"effectTypes": [],
@@ -46,7 +46,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4699121,
+						"imageSpriteId": 1556570,
 						"collisionPoly": {
 							"points": [
 								0.39185750636132316,
@@ -76,7 +76,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 270587104261510,
+				"sid": 374662131323258,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

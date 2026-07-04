@@ -1,5 +1,5 @@
 {
-	"name": "Level",
+	"name": "level",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -25,8 +25,8 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
-					"uid": 23,
-					"sid": 381379802225444,
+					"uid": 2,
+					"sid": 216293104534105,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
@@ -58,8 +58,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 24,
-					"sid": 439538409514633,
+					"uid": 4,
+					"sid": 665983887317472,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
@@ -91,16 +91,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 25,
-					"sid": 309814572122529,
+					"uid": 5,
+					"sid": 583756781027822,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 161,
-						"y": 86,
+						"x": 157,
+						"y": 94,
 						"width": 358.31483780376516,
 						"height": 290.6898791096538,
 						"originX": 0.5,
@@ -124,8 +124,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 61,
-					"sid": 932325520506920,
+					"uid": 7,
+					"sid": 510292832938522,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
@@ -157,8 +157,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 62,
-					"sid": 751963357281700,
+					"uid": 9,
+					"sid": 996047044520607,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
@@ -190,8 +190,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 63,
-					"sid": 307666243662952,
+					"uid": 10,
+					"sid": 121459422132401,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
@@ -215,7 +215,7 @@
 					}
 				}
 			],
-			"sid": 186877233901414,
+			"sid": 231827746009963,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -246,7 +246,7 @@
 			"global": false
 		}
 	],
-	"sid": 964471808183129,
+	"sid": 435988465881853,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1920,
@@ -256,5 +256,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Level"
+	"eventSheet": "level"
 }

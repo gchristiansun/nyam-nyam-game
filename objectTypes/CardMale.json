@@ -1,7 +1,7 @@
 {
 	"name": "CardMale",
 	"plugin-id": "Sprite",
-	"sid": 259067120010093,
+	"sid": 929067933478947,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7515732,
+						"imageSpriteId": 4304139,
 						"collisionPoly": {
 							"points": [
 								0.07865168539325842,
@@ -42,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 385512182035474,
+				"sid": 846597265508104,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

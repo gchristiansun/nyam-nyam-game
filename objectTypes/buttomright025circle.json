@@ -1,7 +1,7 @@
 {
 	"name": "buttomright025circle",
 	"plugin-id": "Sprite",
-	"sid": 337668500433376,
+	"sid": 274855553591921,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "string",
 			"desc": "",
 			"show": true,
-			"sid": 300237327739006
+			"sid": 367647032097980
 		}
 	],
 	"behaviorTypes": [],
@@ -28,13 +28,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3883781,
+						"imageSpriteId": 3468638,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 439634995799535,
+				"sid": 228363656552831,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

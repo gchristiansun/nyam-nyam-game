@@ -1,7 +1,7 @@
 {
 	"name": "button_kembali_animasi",
 	"plugin-id": "Sprite",
-	"sid": 432659522799843,
+	"sid": 811197070031391,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8168196,
+						"imageSpriteId": 4685551,
 						"collisionPoly": {
 							"points": [
 								0.17104303428154632,
@@ -42,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 271034598039380,
+				"sid": 295141311850149,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

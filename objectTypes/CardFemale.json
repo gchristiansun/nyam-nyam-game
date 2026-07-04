@@ -1,7 +1,7 @@
 {
 	"name": "CardFemale",
 	"plugin-id": "Sprite",
-	"sid": 575788887246712,
+	"sid": 429764677148305,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2664459,
+						"imageSpriteId": 6732685,
 						"collisionPoly": {
 							"points": [
 								0.07865168539325842,
@@ -42,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 686010748241715,
+				"sid": 780020063886241,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

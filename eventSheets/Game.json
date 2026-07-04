@@ -1,0 +1,421 @@
+{
+	"name": "Game",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 233812912387602
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "WaterDrag",
+					"sid": 254207224298340,
+					"parameters": {
+						"instance-variable": "PostX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "WaterDrag",
+					"sid": 122622188319382,
+					"parameters": {
+						"instance-variable": "PostY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Watermelon",
+					"sid": 640767626285206,
+					"parameters": {
+						"instance-variable": "PostX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Watermelon",
+					"sid": 477918935976202,
+					"parameters": {
+						"instance-variable": "PostY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Brokoli",
+					"sid": 901450885596237,
+					"parameters": {
+						"instance-variable": "PostX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Brokoli",
+					"sid": 676872073185412,
+					"parameters": {
+						"instance-variable": "PostY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Ikan",
+					"sid": 975803515654770,
+					"parameters": {
+						"instance-variable": "PostX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Ikan",
+					"sid": 304298913926489,
+					"parameters": {
+						"instance-variable": "PostY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Rice",
+					"sid": 383700075670333,
+					"parameters": {
+						"instance-variable": "PostX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Rice",
+					"sid": 174212038446447,
+					"parameters": {
+						"instance-variable": "PostY",
+						"value": "Self.Y"
+					}
+				}
+			],
+			"sid": 563272060813419
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "WaterDrag",
+					"sid": 762096083668495,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [],
+			"sid": 572741703528709
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "WaterDrag",
+					"sid": 112942594536270,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "WaterDrag",
+					"sid": 380627729974982,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.PostX",
+						"end-y": "Self.PostY",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 321689936146171
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Watermelon",
+					"sid": 207132408109520,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Watermelon",
+					"sid": 754401856456405
+				}
+			],
+			"sid": 338469060523573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Watermelon",
+					"sid": 972147051495020,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Watermelon",
+					"sid": 882079070686654,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.PostX",
+						"end-y": "Self.PostY",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 806803018454456,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Watermelon",
+							"sid": 161212905256392,
+							"parameters": {
+								"object": "topright025circle"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 159913434829063,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "topright025circle",
+									"sid": 564274133000772,
+									"parameters": {
+										"instance-variable": "category",
+										"comparison": 0,
+										"value": "\"serat\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "Watermelon",
+									"sid": 994590565253656,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "position",
+										"end-x": "topright025circle.X",
+										"end-y": "topright025circle.Y",
+										"time": "0.5",
+										"ease": "noease",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 738653530648926
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Brokoli",
+					"sid": 816794253120333,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Brokoli",
+					"sid": 512881856002571
+				}
+			],
+			"sid": 320292387487762
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Brokoli",
+					"sid": 229770940475562,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Brokoli",
+					"sid": 797814060629300,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.PostX",
+						"end-y": "Self.PostY",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 593647355107061,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 908100095851097
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Ikan",
+					"sid": 129156533196642,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Ikan",
+					"sid": 135581633672929
+				}
+			],
+			"sid": 994589146771990
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Ikan",
+					"sid": 611722518413236,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Ikan",
+					"sid": 456659229799559,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.PostX",
+						"end-y": "Self.PostY",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 244492781482441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Rice",
+					"sid": 273270489307879,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Rice",
+					"sid": 655602611406261
+				}
+			],
+			"sid": 732521095741892
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Rice",
+					"sid": 546280359767864,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Rice",
+					"sid": 464619572108960,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.PostX",
+						"end-y": "Self.PostY",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 696615372580317
+		}
+	],
+	"sid": 742357758906592
+}

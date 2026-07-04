@@ -1,7 +1,7 @@
 {
 	"name": "Watermelon",
 	"plugin-id": "Sprite",
-	"sid": 612309273962373,
+	"sid": 385447321186193,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,26 +10,26 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 291957500003560
+			"sid": 255355330776401
 		},
 		{
 			"name": "PostY",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 171409343502996
+			"sid": 479067363207355
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 873393351288015
+			"sid": 715785861910279
 		},
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 676156118688185
+			"sid": 690440698719390
 		}
 	],
 	"effectTypes": [],
@@ -46,7 +46,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7094204,
+						"imageSpriteId": 2087479,
 						"collisionPoly": {
 							"points": [
 								0.7994652406417112,
@@ -86,7 +86,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 859614099094058,
+				"sid": 850132294766831,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

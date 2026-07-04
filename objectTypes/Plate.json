@@ -1,7 +1,7 @@
 {
 	"name": "Plate",
 	"plugin-id": "Sprite",
-	"sid": 851850956116879,
+	"sid": 707621147491433,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1547311,
+						"imageSpriteId": 6227515,
 						"collisionPoly": {
 							"points": [
 								0.505859375,
@@ -42,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 432456012217015,
+				"sid": 342857994869278,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

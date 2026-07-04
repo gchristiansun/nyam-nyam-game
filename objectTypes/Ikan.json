@@ -1,7 +1,7 @@
 {
 	"name": "Ikan",
 	"plugin-id": "Sprite",
-	"sid": 288702207201526,
+	"sid": 680548494087509,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,33 +10,33 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 174629857809862
+			"sid": 326365762283777
 		},
 		{
 			"name": "PostY",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 431742385187329
+			"sid": 883519723454423
 		},
 		{
 			"name": "category",
 			"type": "string",
 			"desc": "",
 			"show": true,
-			"sid": 725708108930609
+			"sid": 134591567100412
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 351361226963264
+			"sid": 721502308321747
 		},
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 371528304178548
+			"sid": 834023524416762
 		}
 	],
 	"effectTypes": [],
@@ -53,7 +53,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3804560,
+						"imageSpriteId": 6182126,
 						"collisionPoly": {
 							"points": [
 								0.4362017804154303,
@@ -87,7 +87,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 754576303099060,
+				"sid": 769240686943199,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

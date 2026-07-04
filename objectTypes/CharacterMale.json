@@ -1,7 +1,7 @@
 {
 	"name": "CharacterMale",
 	"plugin-id": "Sprite",
-	"sid": 745519787799823,
+	"sid": 824769440574564,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6283546,
+						"imageSpriteId": 5774522,
 						"collisionPoly": {
 							"points": [
 								0.5235602094240838,
@@ -42,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 900594724539922,
+				"sid": 551180494364218,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

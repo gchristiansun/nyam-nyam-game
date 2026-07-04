@@ -1,7 +1,7 @@
 {
 	"name": "button_kembali",
 	"plugin-id": "Sprite",
-	"sid": 966745155850173,
+	"sid": 463507370492294,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3507751,
+						"imageSpriteId": 8228474,
 						"collisionPoly": {
 							"points": [
 								0.17104303428154632,
@@ -42,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 622936065442222,
+				"sid": 586366692395260,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

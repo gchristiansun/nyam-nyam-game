@@ -1,7 +1,7 @@
 {
 	"name": "Buah",
 	"plugin-id": "Sprite",
-	"sid": 351434768805610,
+	"sid": 932965357785663,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1887965,
+						"imageSpriteId": 1687976,
 						"collisionPoly": {
 							"points": [
 								0.13445378151260504,
@@ -42,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 751348820351576,
+				"sid": 879465951743957,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

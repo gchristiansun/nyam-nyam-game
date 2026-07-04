@@ -1,7 +1,7 @@
 {
 	"name": "SettingButton",
 	"plugin-id": "Sprite",
-	"sid": 279340251726748,
+	"sid": 130819979146198,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7818022,
+						"imageSpriteId": 4113542,
 						"collisionPoly": {
 							"points": [
 								0.45525291828793774,
@@ -84,7 +84,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 509881323615374,
+				"sid": 483499389006910,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

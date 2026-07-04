@@ -1,7 +1,7 @@
 {
 	"name": "Brokoli",
 	"plugin-id": "Sprite",
-	"sid": 497865555676564,
+	"sid": 316122183741905,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,33 +10,33 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 802345649037185
+			"sid": 325315589063161
 		},
 		{
 			"name": "PostY",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 276572824737587
+			"sid": 478377830009571
 		},
 		{
 			"name": "category",
 			"type": "string",
 			"desc": "",
 			"show": true,
-			"sid": 633031322342251
+			"sid": 223975934007047
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 346737258980787
+			"sid": 710454036133543
 		},
 		{
 			"behaviorId": "Tween",
 			"name": "Tween",
-			"sid": 224621348610007
+			"sid": 118678079717589
 		}
 	],
 	"effectTypes": [],
@@ -53,7 +53,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5159580,
+						"imageSpriteId": 4197678,
 						"collisionPoly": {
 							"points": [
 								0.4909090909090909,
@@ -103,7 +103,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 437968057999143,
+				"sid": 383305317026261,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

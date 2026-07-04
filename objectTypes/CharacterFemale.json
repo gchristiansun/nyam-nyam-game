@@ -1,7 +1,7 @@
 {
 	"name": "CharacterFemale",
 	"plugin-id": "Sprite",
-	"sid": 279481877139863,
+	"sid": 815285716223400,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8823413,
+						"imageSpriteId": 6618458,
 						"collisionPoly": {
 							"points": [
 								0.37940761636107195,
@@ -44,7 +44,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 432264906153766,
+				"sid": 378244983352050,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
