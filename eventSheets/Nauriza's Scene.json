@@ -1,0 +1,182 @@
+{
+	"name": "Nauriza's Scene",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "DialogIndex",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 198048479098956
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 574537085410815
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "dialogNauriza",
+					"sid": 904074442215034,
+					"parameters": {
+						"text": "\"Halo, namaku Nauriza. Aku sangat suka bermain ponsel. Sepulang sekolah, aku sering menghabiskan waktu untuk menonton video, bermain game, atau melihat media sosial.\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 699235017385856,
+					"parameters": {
+						"variable": "DialogIndex",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 133456588498321
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 979064571158216,
+					"parameters": {
+						"object": "btnSkip",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 137936176524445,
+					"parameters": {
+						"width": "130",
+						"height": "130"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 637178846453160,
+					"parameters": {
+						"variable": "DialogIndex",
+						"value": "DialogIndex + 1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 695821409624357,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 880498550508751,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				}
+			],
+			"sid": 122828466590938,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 973421483382171,
+							"parameters": {
+								"variable": "DialogIndex",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "typewriter-text",
+							"objectClass": "dialogNauriza",
+							"sid": 782594581846222,
+							"parameters": {
+								"text": "\"Karena terlalu asyik bermain ponsel, terkadang aku jadi malas bergerak dan sering menunda makan.\"",
+								"duration": "3"
+							}
+						}
+					],
+					"sid": 583728811201214
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 206661381820042,
+							"parameters": {
+								"variable": "DialogIndex",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "typewriter-text",
+							"objectClass": "dialogNauriza",
+							"sid": 580730948655172,
+							"parameters": {
+								"text": "\"Padahal, tubuhku tetap membutuhkan makanan bergizi agar sehat dan memiliki energi yang cukup setiap hari.\"",
+								"duration": "3"
+							}
+						}
+					],
+					"sid": 180728051584675
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 569213927275354,
+							"parameters": {
+								"variable": "DialogIndex",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 899871945850233,
+							"parameters": {
+								"layout": "Nauriza's Scene2"
+							}
+						}
+					],
+					"sid": 598866628849529
+				}
+			]
+		}
+	],
+	"sid": 868127078191823
+}

@@ -1,0 +1,62 @@
+{
+	"name": "logoNyamNyam",
+	"plugin-id": "Sprite",
+	"sid": 662241680575192,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1773,
+						"height": 1259,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8092734,
+						"collisionPoly": {
+							"points": [
+								0.25324309080654256,
+								0.043685464654487687,
+								0.8228990411731528,
+								0.0857823669579031,
+								0.922165820642978,
+								0.1715647339158062,
+								0.9599548787366047,
+								0.28276409849086576,
+								0.8420755781161873,
+								0.9499602859412232,
+								0.4844895657078398,
+								0.9801429706115965,
+								0.15736040609137056,
+								0.9142176330420969,
+								0.07670614777213762,
+								0.19301032565528198,
+								0.15284827975183304,
+								0.08737092930897537
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 343606141523175,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

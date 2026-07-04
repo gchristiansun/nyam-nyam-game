@@ -1,0 +1,99 @@
+{
+	"name": "Nauriza's Scene2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "DialogIndex2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 631345016031477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 745633619954260
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "dialogNauriza2",
+					"sid": 611339674849422,
+					"parameters": {
+						"text": "\"Jika aku sering menyisakan makanan, tubuhku bisa menjadi mudah lelah dan kurang bersemangat. Yuk, bantu aku menghabiskan makanan bergizi supaya tetap sehat!\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 785724654894699,
+					"parameters": {
+						"variable": "DialogIndex2",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 664596300420080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 489384271461733,
+					"parameters": {
+						"object": "Sprite6",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Sprite6",
+					"sid": 359137622216028,
+					"parameters": {
+						"width": "130",
+						"height": "130"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 575002376790403,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Sprite6",
+					"sid": 565221381059549,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 641400576359628,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 764195282993142
+		}
+	],
+	"sid": 829083876561946
+}
