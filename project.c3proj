@@ -123,7 +123,13 @@
 			"Buah",
 			"DataChar",
 			"Plate",
-			"BackgroundMain2"
+			"BackgroundMain2",
+			"star_result",
+			"star_result2",
+			"star_result3",
+			"star_empty",
+			"button_kembali",
+			"layout_level"
 		],
 		"subfolders": []
 	},
