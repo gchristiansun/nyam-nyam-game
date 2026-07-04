@@ -1,0 +1,56 @@
+{
+	"name": "star_result",
+	"plugin-id": "Sprite",
+	"sid": 429302184906819,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 470,
+						"height": 313,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8470584,
+						"collisionPoly": {
+							"points": [
+								0.5191489361702127,
+								0.134185303514377,
+								0.7361702127659574,
+								0.3769968051118211,
+								0.7361702127659574,
+								0.4185303514376997,
+								0.6297872340425532,
+								0.7859424920127795,
+								0.3425531914893617,
+								0.7507987220447284,
+								0.2702127659574468,
+								0.34185303514376997
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 837182809677934,
+				"name": "star_fill",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

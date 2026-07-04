@@ -48,14 +48,6 @@
 								"width": "639",
 								"height": "272"
 							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 421193018073085,
-							"parameters": {
-								"layout": "Level"
-							}
 						}
 					],
 					"sid": 159021352653576
