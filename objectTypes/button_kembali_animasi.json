@@ -1,0 +1,56 @@
+{
+	"name": "button_kembali_animasi",
+	"plugin-id": "Sprite",
+	"sid": 432659522799843,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2742,
+						"height": 1828,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8168196,
+						"collisionPoly": {
+							"points": [
+								0.17104303428154632,
+								0.2702407002188184,
+								0.8986141502552881,
+								0.31947483588621445,
+								0.8967906637490882,
+								0.6608315098468271,
+								0.8289569657184537,
+								0.7084245076586433,
+								0.1400437636761488,
+								0.699671772428884,
+								0.11415025528811087,
+								0.3025164113785558
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 271034598039380,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

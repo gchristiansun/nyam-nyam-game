@@ -99,8 +99,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 157,
-						"y": 94,
+						"x": 161,
+						"y": 86,
 						"width": 358.31483780376516,
 						"height": 290.6898791096538,
 						"originX": 0.5,
@@ -256,5 +256,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "Level"
 }

@@ -292,6 +292,41 @@
 				}
 			],
 			"sid": 435493929329875
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Navigasi Level",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 202329774647154,
+							"parameters": {
+								"object": "btnMulai",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 276969970549602,
+							"parameters": {
+								"layout": "Level"
+							}
+						}
+					],
+					"sid": 969115585238138
+				}
+			],
+			"sid": 155942596831488
 		}
 	],
 	"sid": 524345953350395

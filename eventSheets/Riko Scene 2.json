@@ -1,0 +1,78 @@
+{
+	"name": "Riko Scene 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 165200031817144,
+					"parameters": {
+						"object": "btnSkip",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 849137180089300,
+					"parameters": {
+						"layout": "Scene Main"
+					}
+				}
+			],
+			"sid": 673233524173799
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 724189853205894,
+					"parameters": {
+						"object": "button_kembali_animasi",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 966485493318295,
+					"parameters": {
+						"layout": "Level"
+					}
+				}
+			],
+			"sid": 536456661767372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 208730578919626
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "bubble_chat_Riko_2",
+					"sid": 794018082864152,
+					"parameters": {
+						"text": "\"Aku berlatih sepak bola dan melakukan berbagai latihan setiap hari, supaya bisa jadi atlet sepak bola yang hebat.\r\n\"",
+						"duration": "3"
+					}
+				}
+			],
+			"sid": 948210425875541
+		}
+	],
+	"sid": 807944032881807
+}

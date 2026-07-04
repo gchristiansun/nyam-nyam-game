@@ -1,0 +1,64 @@
+{
+	"name": "RIko_1",
+	"plugin-id": "Sprite",
+	"sid": 147359705061877,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3538,
+						"height": 7045,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7154824,
+						"collisionPoly": {
+							"points": [
+								0.5316563029960429,
+								0.02995031937544358,
+								0.7767100056529113,
+								0.0716820440028389,
+								0.8304126625211984,
+								0.13498935415188076,
+								0.899095534200113,
+								0.441305890702626,
+								0.8185415488976823,
+								0.8898509581263307,
+								0.7498586772187676,
+								0.8976579134137687,
+								0.17891464104013566,
+								0.8556422995031937,
+								0.06613906161673262,
+								0.5003548616039745,
+								0.27953646127755793,
+								0.09950319375443577,
+								0.4123798756359525,
+								0.042725337118523776
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 644117144101277,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

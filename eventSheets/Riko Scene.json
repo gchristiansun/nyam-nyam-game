@@ -1,0 +1,78 @@
+{
+	"name": "Riko Scene",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 887276189877744
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "bubble_chat_riko",
+					"sid": 379836270776108,
+					"parameters": {
+						"text": "\"Halo, namaku Syafiq. Aku bercita-cita menjadi pemain sepak bola profesional. Setiap hari aku rajin berlatih agar kemampuan dan staminaku semakin baik.\"",
+						"duration": "3"
+					}
+				}
+			],
+			"sid": 586520009930019
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 941437043701407,
+					"parameters": {
+						"object": "btnSkip",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 338083200421900,
+					"parameters": {
+						"layout": "Riko Scene 2"
+					}
+				}
+			],
+			"sid": 332847890454985
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 967994182826135,
+					"parameters": {
+						"object": "BackButton",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 559910201517325,
+					"parameters": {
+						"layout": "Level"
+					}
+				}
+			],
+			"sid": 152271985046981
+		}
+	],
+	"sid": 439635207214303
+}
