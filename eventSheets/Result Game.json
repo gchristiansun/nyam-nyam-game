@@ -1,0 +1,301 @@
+{
+	"name": "Result Game",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 216091360646907
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "resultKoin",
+					"sid": 940865257363958,
+					"parameters": {
+						"text": "str(koin)"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 602728031168177,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 426883956501847,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result3",
+					"sid": 809295336117205,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 860917460320690
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 834639934226519,
+					"parameters": {
+						"variable": "star_System",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 398002746609062,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 709931143647665
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 396608107297155,
+					"parameters": {
+						"variable": "star_System",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 565885773836081,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 447411298530273,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 138502365180426
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 297510351802450,
+					"parameters": {
+						"variable": "star_System",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 616338572612889,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 355893537036362,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result3",
+					"sid": 535259042375377,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 330441307176096
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 257649017493520,
+					"parameters": {
+						"object": "btnRetry",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnRetry",
+					"sid": 177520715262731,
+					"parameters": {
+						"width": "180.686955",
+						"height": "58.575902"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 981659198731432,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnRetry",
+					"sid": 850628029913156,
+					"parameters": {
+						"width": "200.686955",
+						"height": "78.575902"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 149382478713566,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnRetry",
+					"sid": 556589548353774,
+					"parameters": {
+						"width": "180.686955",
+						"height": "58.575902"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 266723756023608,
+					"parameters": {
+						"layout": "Gameplay"
+					}
+				},
+				{
+					"callFunction": "restrartKoin",
+					"sid": 579482778462464
+				}
+			],
+			"sid": 821092142783422
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 191700056566638,
+					"parameters": {
+						"object": "btnMainMenu",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnMainMenu",
+					"sid": 260803470705127,
+					"parameters": {
+						"width": "196.597794",
+						"height": "59.117558"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 773791582714281,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnMainMenu",
+					"sid": 466565921654115,
+					"parameters": {
+						"width": "216.597794",
+						"height": "79.117558"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 812218907214395,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnMainMenu",
+					"sid": 813429255881087,
+					"parameters": {
+						"width": "196.597794",
+						"height": "59.117558"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 319214172310058,
+					"parameters": {
+						"layout": "Level"
+					}
+				}
+			],
+			"sid": 807404422510863
+		}
+	],
+	"sid": 334760034046923
+}

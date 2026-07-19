@@ -1,0 +1,24 @@
+{
+	"name": "famSFXButton",
+	"plugin-id": "Sprite",
+	"sid": 299302188610113,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"btnMulai",
+		"btnInfo",
+		"btnSetting",
+		"btnToko",
+		"btnSkip",
+		"btnBGM",
+		"btnSFX",
+		"btnVO",
+		"btnClose",
+		"btnBack",
+		"btnMainMenu",
+		"btnGamePlay",
+		"btnSelesai",
+		"btnRetry"
+	]
+}

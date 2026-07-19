@@ -1,0 +1,11 @@
+{
+	"name": "famTxtInfo",
+	"plugin-id": "Text",
+	"sid": 584358599941410,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"txtInformasi"
+	]
+}

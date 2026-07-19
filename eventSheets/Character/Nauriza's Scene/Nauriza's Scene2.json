@@ -1,0 +1,266 @@
+{
+	"name": "Nauriza's Scene2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "DialogIndex1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 519992754304232
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 593883678194048
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "btnSkip",
+					"sid": 801128128073549,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "dialogNauriza2",
+					"sid": 497261103248430,
+					"parameters": {
+						"text": "\"Awalnya aku hanya ingin membuka ponsel sebentar. Namun, tanpa sadar aku malah asyik menonton video, bermain game, atau melihat media sosial hingga lupa waktu.\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 902532457655435,
+					"parameters": {
+						"variable": "DialogIndex1",
+						"value": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 997237669346477,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "btnSkip",
+					"sid": 552419836587045,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 548390142402412
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 706905197038971,
+					"parameters": {
+						"object": "btnSkip",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 788690504416421,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 628448151916619,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 755321490137447,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 186994408774234,
+					"parameters": {
+						"variable": "DialogIndex1",
+						"value": "DialogIndex1 + 1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 839695204233554,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				}
+			],
+			"sid": 953295733071302,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 347918087440033,
+							"parameters": {
+								"variable": "DialogIndex1",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "btnSkip",
+							"sid": 413086825786390,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "typewriter-text",
+							"objectClass": "dialogNauriza2",
+							"sid": 300545524521763,
+							"parameters": {
+								"text": "\"Padahal, tubuhku tetap membutuhkan makanan bergizi agar sehat dan memiliki energi yang cukup setiap hari.\"",
+								"duration": "3"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 662001122701688,
+							"parameters": {
+								"seconds": "5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "btnSkip",
+							"sid": 671555684126068,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 231646584926884
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 759962895588315,
+							"parameters": {
+								"variable": "DialogIndex1",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 833590997418127,
+							"parameters": {
+								"layout": "Nauriza's Scene3"
+							}
+						}
+					],
+					"sid": 873458677232289
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 823944245931625,
+					"parameters": {
+						"object": "btnBack",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 557885277960288,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 455996046333816,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 441074421769686,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 923813355167804,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 464833635477379
+		}
+	],
+	"sid": 959704090211808
+}

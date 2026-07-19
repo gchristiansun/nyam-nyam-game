@@ -1,0 +1,176 @@
+{
+	"name": "Nauriza's Scene3",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "DialogIndex2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 631345016031477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 745633619954260
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "btnGamePlay",
+					"sid": 770506635961097,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "dialogNauriza3",
+					"sid": 634799833631001,
+					"parameters": {
+						"text": "\"Jika aku sering menyisakan makanan, tubuhku bisa menjadi mudah lelah dan kurang bersemangat. Yuk, bantu aku menghabiskan makanan bergizi supaya tetap sehat!\"",
+						"duration": "5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 785724654894699,
+					"parameters": {
+						"variable": "DialogIndex2",
+						"value": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 681543553038796,
+					"parameters": {
+						"seconds": "7",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "btnGamePlay",
+					"sid": 595845209525618,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 664596300420080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 489384271461733,
+					"parameters": {
+						"object": "btnGamePlay",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnGamePlay",
+					"sid": 979540404202167,
+					"parameters": {
+						"width": "322.420131",
+						"height": "145.928571"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 575002376790403,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnGamePlay",
+					"sid": 550410003459179,
+					"parameters": {
+						"width": "362.420131",
+						"height": "185.928571"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 641400576359628,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 764195282993142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 571472941162159,
+					"parameters": {
+						"object": "btnBack",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 668534727723362,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 789102548075063,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 334638323339799,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 120563309381519,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 503365301365058
+		}
+	],
+	"sid": 829083876561946
+}

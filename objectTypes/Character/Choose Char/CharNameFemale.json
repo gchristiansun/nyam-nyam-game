@@ -1,0 +1,58 @@
+{
+	"name": "CharNameFemale",
+	"plugin-id": "Sprite",
+	"sid": 147868389583387,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 697,
+						"height": 254,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6429064,
+						"collisionPoly": {
+							"points": [
+								0.11621233859397417,
+								0.23622047244094488,
+								0.8981348637015782,
+								0.2637795275590551,
+								0.8637015781922525,
+								0.7952755905511811,
+								0.09182209469153516,
+								0.7677165354330708,
+								0.06599713055954089,
+								0.7086614173228346,
+								0.05021520803443329,
+								0.6338582677165354,
+								0.06169296987087518,
+								0.32677165354330706
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 101273153700346,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

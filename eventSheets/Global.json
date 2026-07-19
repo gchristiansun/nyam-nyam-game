@@ -1,0 +1,195 @@
+{
+	"name": "Global",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "isSfxMuted",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 139080761623428
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SFX2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 503739607132977,
+							"parameters": {
+								"object": "famSFXButton",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 936911145813412,
+							"parameters": {
+								"audio-file": {
+									"path": "sfx-btnKlik"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"sfx\""
+							}
+						}
+					],
+					"sid": 792662475033261
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 430657628544763,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 678495545171678
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "famSFXButton",
+									"sid": 311408032862204,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-muted",
+									"objectClass": "Audio",
+									"sid": 994187472384950,
+									"parameters": {
+										"tag": "\"sfx\"",
+										"state": "unmuted"
+									}
+								}
+							],
+							"sid": 484238344538136
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 149484736565502,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 303397493270136
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnSFX",
+									"sid": 483277042472657,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "set-muted",
+									"objectClass": "Audio",
+									"sid": 537564549416350,
+									"parameters": {
+										"tag": "\"sfx\"",
+										"state": "muted"
+									}
+								}
+							],
+							"sid": 271077181177655
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 806980122126847,
+							"parameters": {
+								"object": "btnSFX",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "btnSFX",
+							"sid": 393806703758699,
+							"parameters": {
+								"width": "131",
+								"height": "135"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 420198488196402,
+							"parameters": {
+								"seconds": "0.1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "btnSFX",
+							"sid": 676178743059503,
+							"parameters": {
+								"width": "121",
+								"height": "125"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 509800519451550,
+							"parameters": {
+								"seconds": "0.1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "btnSFX",
+							"sid": 753455603038329,
+							"parameters": {
+								"width": "131",
+								"height": "135"
+							}
+						}
+					],
+					"sid": 236796717750962
+				}
+			],
+			"sid": 817720593219824
+		}
+	],
+	"sid": 233120724990091
+}

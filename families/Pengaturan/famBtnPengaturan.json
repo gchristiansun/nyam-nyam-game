@@ -1,0 +1,14 @@
+{
+	"name": "famBtnPengaturan",
+	"plugin-id": "Sprite",
+	"sid": 970756057257264,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"btnBGM",
+		"btnVO",
+		"btnSFX",
+		"judulPengaturan"
+	]
+}

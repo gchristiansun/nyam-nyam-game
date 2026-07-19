@@ -1,0 +1,56 @@
+{
+	"name": "DataChar",
+	"plugin-id": "Sprite",
+	"sid": 550315759916005,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 949,
+						"height": 1424,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7145787,
+						"collisionPoly": {
+							"points": [
+								0.35089567966280294,
+								0.11306179775280899,
+								0.9336143308746049,
+								0.19030898876404495,
+								0.9062170706006323,
+								0.8335674157303371,
+								0.8577449947312961,
+								0.8476123595505618,
+								0.06533192834562697,
+								0.7935393258426966,
+								0.1053740779768177,
+								0.1348314606741573
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 155800098863087,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

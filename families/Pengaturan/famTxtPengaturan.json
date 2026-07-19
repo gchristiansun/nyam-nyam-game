@@ -1,0 +1,11 @@
+{
+	"name": "famTxtPengaturan",
+	"plugin-id": "Text",
+	"sid": 341863104031985,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"txtPengaturan"
+	]
+}

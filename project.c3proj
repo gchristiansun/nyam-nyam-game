@@ -43,8 +43,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -52,60 +66,271 @@
 	"uniqueId": "4lcqgkdqux6",
 	"objectTypes": {
 		"items": [
-			"TiledBackground",
-			"bgHome",
-			"btnMulai",
-			"logoNyamNyam",
-			"btnToko",
-			"Sprite",
-			"Sprite2",
-			"btnSoundOn",
-			"btnSoundOff",
-			"Sprite5",
-			"Touch",
-			"Audio",
-			"TiledBackground2",
+			"SpawnObject",
+			"BackgroundBoard",
+			"Backgroundv2",
 			"TiledBackground3",
-			"TiledBackground4",
-			"TiledBackground5",
-			"Sprite3",
-			"dialogNauriza",
-			"btnSkip",
-			"TiledBackground6",
-			"Sprite4",
-			"dialogNaurizaScene2",
-			"Text",
-			"dialogNauriza2",
-			"Sprite6"
+			"Scene1",
+			"bgTokoSementara"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Audio",
+					"btnClose",
+					"btnInfo",
+					"btnSetting",
+					"overlay",
+					"Touch",
+					"btnBack",
+					"btnMainMenu",
+					"btnRetry",
+					"btnSelesai"
+				],
+				"subfolders": [],
+				"name": "Shared"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"dialogNauriza",
+							"dialogNauriza2",
+							"dialogNauriza3",
+							"dialogNaurizaScene2",
+							"TiledBackground4",
+							"TiledBackground5",
+							"TiledBackground6",
+							"TiledBackground7",
+							"TiledBackground8",
+							"Sprite7"
+						],
+						"subfolders": [],
+						"name": "Nauriza"
+					},
+					{
+						"items": [
+							"bblChat",
+							"btnSkip",
+							"Sprite3",
+							"Sprite8",
+							"btnGamePlay"
+						],
+						"subfolders": [],
+						"name": "Shared"
+					},
+					{
+						"items": [
+							"bubble_chat_riko",
+							"bubble_chat_Riko_2",
+							"bubble_chat_Riko_3",
+							"bubble_dialog",
+							"bubble_dialog2",
+							"bubble_dialog3",
+							"RIko_1",
+							"Riko_2",
+							"Sprite",
+							"TiledBackground"
+						],
+						"subfolders": [],
+						"name": "Rico"
+					},
+					{
+						"items": [
+							"titleCharacter",
+							"CardFemale",
+							"CardMale",
+							"CharacterFemale",
+							"CharacterMale",
+							"CharNameMale",
+							"CharNameFemale",
+							"ButtonSelectChar"
+						],
+						"subfolders": [],
+						"name": "Choose Char"
+					}
+				],
+				"name": "Character"
+			},
+			{
+				"items": [
+					"bgHome",
+					"btnBGM",
+					"btnMulai",
+					"btnSFX",
+					"btnToko",
+					"btnVO",
+					"judulInformasi",
+					"judulPengaturan",
+					"logoNyamNyam",
+					"panel",
+					"txtInformasi",
+					"txtPengaturan"
+				],
+				"subfolders": [],
+				"name": "Home"
+			},
+			{
+				"items": [
+					"txtKoin",
+					"WaterDrag",
+					"Watermelon",
+					"topleft025circle2",
+					"topright025circle",
+					"bottomleft025circle",
+					"bottomright025circle",
+					"Brokoli",
+					"AirPutih",
+					"Level",
+					"MakananPokok",
+					"Plate",
+					"ProgresBG",
+					"ProgressFill",
+					"koinBoard",
+					"LaukPauk",
+					"Buah",
+					"Ikan",
+					"DataChar",
+					"Sprite4",
+					"Sayuran",
+					"BackgroundMain2",
+					"Rice"
+				],
+				"subfolders": [],
+				"name": "Gameplay"
+			},
+			{
+				"items": [
+					"level1",
+					"star_result",
+					"star_result2",
+					"star_result3",
+					"level2",
+					"level3"
+				],
+				"subfolders": [],
+				"name": "Level"
+			},
+			{
+				"items": [
+					"emptyStar1",
+					"emptyStar2",
+					"emptyStar3",
+					"resultKoin",
+					"panelKoin",
+					"txtNyamHasil"
+				],
+				"subfolders": [],
+				"name": "Result Game"
+			}
+		]
 	},
 	"functionsName": "Functions",
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
-		"subfolders": []
+		"items": [
+			"famSFXButton"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"famBtnPengaturan",
+					"famTxtPengaturan"
+				],
+				"subfolders": [],
+				"name": "Pengaturan"
+			},
+			{
+				"items": [
+					"famBtnInfo",
+					"famTxtInfo"
+				],
+				"subfolders": [],
+				"name": "Informasi"
+			}
+		]
 	},
 	"layouts": {
 		"items": [
 			"Home",
 			"Toko",
 			"Level",
-			"Nauriza's Scene",
-			"Nauriza's Scene2"
+			"Choose Char",
+			"Gameplay",
+			"Result Game"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Nauriza's Scene",
+							"Nauriza's Scene2",
+							"Nauriza's Scene3"
+						],
+						"subfolders": [],
+						"name": "Nauriza"
+					},
+					{
+						"items": [
+							"Scene Rico",
+							"Scene Rico 2",
+							"Scene Rico 3"
+						],
+						"subfolders": [],
+						"name": "Rico"
+					}
+				],
+				"name": "Character"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
 			"Home",
-			"Toko",
+			"UpdateStar",
+			"UpdateProgressBar",
+			"Result Game",
 			"Level",
-			"Nauriza's Scene",
-			"Nauriza's Scene2"
+			"Gameplay",
+			"Global"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Nauriza's Scene",
+							"Nauriza's Scene2",
+							"Nauriza's Scene3"
+						],
+						"subfolders": [],
+						"name": "Nauriza's Scene"
+					},
+					{
+						"items": [
+							"Scene Rico",
+							"Scene Rico 2",
+							"Scene Rico 3"
+						],
+						"subfolders": [],
+						"name": "Rico's Scene"
+					},
+					{
+						"items": [
+							"Choose Char"
+						],
+						"subfolders": [],
+						"name": "Choose Char"
+					}
+				],
+				"name": "Character"
+			}
+		]
 	},
 	"rootFileFolders": {
 		"script": {
@@ -119,17 +344,17 @@
 		"music": {
 			"items": [
 				{
-					"name": "music menu.webm",
+					"name": "bgm-mainMenu.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 781756458400107,
+					"sid": 873622209332141,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "_MConverter.eu_music menu.webm",
+					"name": "sfx-btnKlik.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 873622209332141,
+					"sid": 290249363077271,
 					"file-info": {
 						"purpose": "none"
 					}

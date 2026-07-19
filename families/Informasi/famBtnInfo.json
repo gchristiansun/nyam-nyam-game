@@ -1,0 +1,11 @@
+{
+	"name": "famBtnInfo",
+	"plugin-id": "Sprite",
+	"sid": 267322566788437,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"judulInformasi"
+	]
+}

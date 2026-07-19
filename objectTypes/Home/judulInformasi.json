@@ -1,0 +1,54 @@
+{
+	"name": "judulInformasi",
+	"plugin-id": "Sprite",
+	"sid": 709201191182623,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 355,
+						"height": 236,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6386318,
+						"collisionPoly": {
+							"points": [
+								0.16080729166666666,
+								0.25,
+								0.9036458333333334,
+								0.2978515625,
+								0.9225260416666666,
+								0.3662109375,
+								0.8391927083333334,
+								0.7294921875,
+								0.125,
+								0.71484375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 768147734013477,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

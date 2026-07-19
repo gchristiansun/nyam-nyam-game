@@ -1,0 +1,1579 @@
+{
+	"name": "Gameplay",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 860206889193651
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "WaterDrag",
+					"sid": 665124637121133,
+					"parameters": {
+						"instance-variable": "StartX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "WaterDrag",
+					"sid": 425411293211101,
+					"parameters": {
+						"instance-variable": "StartY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Watermelon",
+					"sid": 846517547880819,
+					"parameters": {
+						"instance-variable": "StartX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Watermelon",
+					"sid": 915732764525104,
+					"parameters": {
+						"instance-variable": "StartY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Brokoli",
+					"sid": 825809923926080,
+					"parameters": {
+						"instance-variable": "StartX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Brokoli",
+					"sid": 906971581718761,
+					"parameters": {
+						"instance-variable": "StartY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Ikan",
+					"sid": 891187412892198,
+					"parameters": {
+						"instance-variable": "StartX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Ikan",
+					"sid": 508727642740018,
+					"parameters": {
+						"instance-variable": "StartY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Rice",
+					"sid": 946188655072888,
+					"parameters": {
+						"instance-variable": "StartX",
+						"value": "Self.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Rice",
+					"sid": 630246598726772,
+					"parameters": {
+						"instance-variable": "StartY",
+						"value": "Self.Y"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpawnObject",
+					"sid": 521761073129839,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "ProgressFill",
+					"sid": 154564875222954,
+					"parameters": {
+						"width": "0"
+					}
+				}
+			],
+			"sid": 959485364842789
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "WaterDrag",
+					"sid": 378492463189157,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [],
+			"sid": 478560139619937
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "WaterDrag",
+					"sid": 189177990803700,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "WaterDrag",
+					"sid": 181315274359113,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.StartX",
+						"end-y": "Self.StartY",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 278812499346944
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Watermelon",
+					"sid": 801344673258032,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Watermelon",
+					"sid": 454286480456873
+				}
+			],
+			"sid": 927058685780112,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 948822853881644,
+							"parameters": {
+								"object": "SpawnObject",
+								"expression": "SpawnObject.type",
+								"comparison": 0,
+								"value": "\"Minerale\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "SpawnObject",
+							"sid": 851956726155464,
+							"parameters": {
+								"object": "Watermelon",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Watermelon",
+							"sid": 777081294981886,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "SpawnObject.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Watermelon",
+							"sid": 610307162583106,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "SpawnObject.Y"
+							}
+						}
+					],
+					"sid": 560981327743087
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Watermelon",
+					"sid": 321775578663175,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Watermelon",
+					"sid": 622481250670593,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.StartX",
+						"end-y": "Self.StartY",
+						"time": "0.2",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 917730643629143,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ProgressFill",
+							"sid": 281044185749812,
+							"parameters": {
+								"instance-variable": "category",
+								"comparison": 0,
+								"value": "\"minerale\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 636785102085074,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ProgressFill",
+									"sid": 888272947391412,
+									"parameters": {
+										"instance-variable": "Max",
+										"comparison": 5,
+										"value": "ProgressFill.Current + Watermelon.value"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "Watermelon",
+									"sid": 951957103215642,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "position",
+										"end-x": "Self.StartX",
+										"end-y": "Self.StartY",
+										"time": "0.2",
+										"ease": "noease",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 399771825517669
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ProgressFill",
+									"sid": 395576387620484,
+									"parameters": {
+										"instance-variable": "Max",
+										"comparison": 5,
+										"value": "ProgressFill.Current + Watermelon.value"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 900276740176943,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Watermelon",
+											"sid": 883831876090520,
+											"parameters": {
+												"object": "topright025circle"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 947890742934923,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Watermelon",
+													"sid": 230496105336762,
+													"parameters": {
+														"instance-variable": "category",
+														"comparison": 0,
+														"value": "\"minerale\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "tween-two-properties",
+													"objectClass": "Watermelon",
+													"sid": 163325686497996,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"\"",
+														"property": "position",
+														"end-x": "topright025circle.X",
+														"end-y": "topright025circle.Y",
+														"time": "0.2",
+														"ease": "noease",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												}
+											],
+											"sid": 793784365770721,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "Watermelon",
+															"sid": 933084777298269,
+															"parameters": {
+																"instance-variable": "onPlate"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"callFunction": "AddProgress",
+															"sid": 304608700504653,
+															"parameters": [
+																"Watermelon.value",
+																"Watermelon.category"
+															]
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Watermelon",
+															"sid": 846174372209478,
+															"parameters": {
+																"instance-variable": "onPlate",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 887291039382784
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Watermelon",
+							"sid": 738241348545379,
+							"parameters": {
+								"object": "topright025circle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 848877107527312,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Watermelon",
+									"sid": 256875764408511,
+									"parameters": {
+										"instance-variable": "onPlate"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "RemoveProgress",
+									"sid": 773911228069047,
+									"parameters": [
+										"Watermelon.value",
+										"Watermelon.category"
+									]
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Watermelon",
+									"sid": 844017699583018,
+									"parameters": {
+										"instance-variable": "onPlate",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 427464212776984
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Brokoli",
+					"sid": 833983455168650,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Brokoli",
+					"sid": 713350043232352
+				}
+			],
+			"sid": 258608856391623,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 437643133649136,
+							"parameters": {
+								"object": "SpawnObject",
+								"expression": "SpawnObject.type",
+								"comparison": 0,
+								"value": "\"Serat\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "SpawnObject",
+							"sid": 565152263114308,
+							"parameters": {
+								"object": "Brokoli",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Brokoli",
+							"sid": 620199949948340,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "SpawnObject.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Brokoli",
+							"sid": 918314832785579,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "SpawnObject.Y"
+							}
+						}
+					],
+					"sid": 636464511451208
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Brokoli",
+					"sid": 830389687398983,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Brokoli",
+					"sid": 275869751197873,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.StartX",
+						"end-y": "Self.StartY",
+						"time": "0.2",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 168892650386741,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ProgressFill",
+							"sid": 801052880516016,
+							"parameters": {
+								"instance-variable": "category",
+								"comparison": 0,
+								"value": "\"serat\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 187955312740651,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ProgressFill",
+									"sid": 444094888700205,
+									"parameters": {
+										"instance-variable": "Max",
+										"comparison": 5,
+										"value": "ProgressFill.Current + Brokoli.value"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "Ikan",
+									"sid": 251036451429582,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "position",
+										"end-x": "Self.StartX",
+										"end-y": "Self.StartY",
+										"time": "0.2",
+										"ease": "noease",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 869019896702042
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ProgressFill",
+									"sid": 274956389738184,
+									"parameters": {
+										"instance-variable": "Max",
+										"comparison": 5,
+										"value": "ProgressFill.Current + Brokoli.value"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 260212184671869,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Brokoli",
+											"sid": 770872824779952,
+											"parameters": {
+												"object": "bottomright025circle"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 124956544240968,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Brokoli",
+													"sid": 954681321108796,
+													"parameters": {
+														"instance-variable": "category",
+														"comparison": 0,
+														"value": "\"serat\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "tween-two-properties",
+													"objectClass": "Brokoli",
+													"sid": 429772419247982,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"\"",
+														"property": "position",
+														"end-x": "bottomright025circle.X",
+														"end-y": "bottomright025circle.Y",
+														"time": "0.2",
+														"ease": "default",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												}
+											],
+											"sid": 714916551269484,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "Brokoli",
+															"sid": 295711812490177,
+															"parameters": {
+																"instance-variable": "onPlate"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"callFunction": "AddProgress",
+															"sid": 213083554369989,
+															"parameters": [
+																"Brokoli.value",
+																"Brokoli.category"
+															]
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Brokoli",
+															"sid": 127119100614389,
+															"parameters": {
+																"instance-variable": "onPlate",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 150802168172558
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Brokoli",
+							"sid": 737184233645350,
+							"parameters": {
+								"object": "bottomright025circle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Brokoli",
+							"sid": 378066308398169,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "Brokoli.StartX",
+								"end-y": "Brokoli.StartY",
+								"time": "0.2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 308539050818884,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Brokoli",
+									"sid": 248329650050560,
+									"parameters": {
+										"instance-variable": "onPlate"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "RemoveProgress",
+									"sid": 737800160046934,
+									"parameters": [
+										"Brokoli.value",
+										"Brokoli.category"
+									]
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Brokoli",
+									"sid": 236217713225195,
+									"parameters": {
+										"instance-variable": "onPlate",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 287947907716834
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Ikan",
+					"sid": 600815670858055,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Ikan",
+					"sid": 377928307002778
+				}
+			],
+			"sid": 588229593290855,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 403069093341231,
+							"parameters": {
+								"object": "SpawnObject",
+								"expression": "SpawnObject.type",
+								"comparison": 0,
+								"value": "\"Protein\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "SpawnObject",
+							"sid": 464888722386763,
+							"parameters": {
+								"object": "Ikan",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Ikan",
+							"sid": 546209233223699,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "SpawnObject.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Ikan",
+							"sid": 417102123726801,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "SpawnObject.Y"
+							}
+						}
+					],
+					"sid": 369073258148305
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Ikan",
+					"sid": 936722600697696,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Ikan",
+					"sid": 189843071523631,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "Self.StartX",
+						"end-y": "Self.StartY",
+						"time": "0.2",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 717153668216594,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ProgressFill",
+							"sid": 636867677526100,
+							"parameters": {
+								"instance-variable": "category",
+								"comparison": 0,
+								"value": "\"protein\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 841362590771848,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ProgressFill",
+									"sid": 133083698639290,
+									"parameters": {
+										"instance-variable": "Max",
+										"comparison": 5,
+										"value": "ProgressFill.Current + Ikan.value"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "Ikan",
+									"sid": 945328097918610,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "position",
+										"end-x": "Self.StartX",
+										"end-y": "Self.StartY",
+										"time": "0.2",
+										"ease": "noease",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 323402036934438
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ProgressFill",
+									"sid": 840954934338493,
+									"parameters": {
+										"instance-variable": "Max",
+										"comparison": 5,
+										"value": "ProgressFill.Current + Ikan.value"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 648366017351341,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Ikan",
+											"sid": 504573142121959,
+											"parameters": {
+												"object": "bottomleft025circle"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 993318070727421,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Ikan",
+													"sid": 310632843645150,
+													"parameters": {
+														"instance-variable": "category",
+														"comparison": 0,
+														"value": "\"protein\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "tween-two-properties",
+													"objectClass": "Ikan",
+													"sid": 428764309092331,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"\"",
+														"property": "position",
+														"end-x": "bottomleft025circle.X",
+														"end-y": "bottomleft025circle.Y",
+														"time": "0.2",
+														"ease": "default",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												}
+											],
+											"sid": 951920350320842,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "Ikan",
+															"sid": 942683489973320,
+															"parameters": {
+																"instance-variable": "onPlate"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"callFunction": "AddProgress",
+															"sid": 965533145390754,
+															"parameters": [
+																"Ikan.value",
+																"Ikan.category"
+															]
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Ikan",
+															"sid": 979540607608488,
+															"parameters": {
+																"instance-variable": "onPlate",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 903095173042871
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Ikan",
+							"sid": 625979720430860,
+							"parameters": {
+								"object": "bottomleft025circle"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Ikan",
+							"sid": 937393466833111,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "Ikan.StartX",
+								"end-y": "Ikan.StartY",
+								"time": "0.2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 272318606656785,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Ikan",
+									"sid": 765717390947280,
+									"parameters": {
+										"instance-variable": "onPlate"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "RemoveProgress",
+									"sid": 135782208852563,
+									"parameters": [
+										"Ikan.value",
+										"Ikan.category"
+									]
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Ikan",
+									"sid": 793782876343635,
+									"parameters": {
+										"instance-variable": "onPlate",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 966692392114559
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Rice",
+					"sid": 621430271078407,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Rice",
+					"sid": 122164672996041
+				}
+			],
+			"sid": 758500978031753,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 866778507167130,
+							"parameters": {
+								"object": "SpawnObject",
+								"expression": "SpawnObject.type",
+								"comparison": 0,
+								"value": "\"Rice\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "SpawnObject",
+							"sid": 372842620883013,
+							"parameters": {
+								"object": "Rice",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false,
+								"template-name": "\"Rice\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Rice",
+							"sid": 236925654777386,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "SpawnObject.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Rice",
+							"sid": 425023839777948,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "SpawnObject.Y"
+							}
+						}
+					],
+					"sid": 786954756221286
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Rice",
+					"sid": 679139179793555,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [],
+			"sid": 637775253905603,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ProgressFill",
+							"sid": 692371052000884,
+							"parameters": {
+								"instance-variable": "category",
+								"comparison": 0,
+								"value": "\"karbohidrat\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 319871404835488,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ProgressFill",
+									"sid": 469460577974327,
+									"parameters": {
+										"instance-variable": "Max",
+										"comparison": 5,
+										"value": "ProgressFill.Current + Rice.value"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "Rice",
+									"sid": 860379434152280,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "position",
+										"end-x": "Rice.StartX",
+										"end-y": "Rice.StartY",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 182919246022080
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "ProgressFill",
+									"sid": 793079112507644,
+									"parameters": {
+										"instance-variable": "Max",
+										"comparison": 5,
+										"value": "ProgressFill.Current + Rice.value"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 348026798677825,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Rice",
+											"sid": 803521764870029,
+											"parameters": {
+												"object": "topleft025circle2"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 680581638645765,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Rice",
+													"sid": 626590754848662,
+													"parameters": {
+														"instance-variable": "category",
+														"comparison": 0,
+														"value": "\"karbohidrat\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "tween-two-properties",
+													"objectClass": "Rice",
+													"sid": 820599329241306,
+													"behaviorType": "Tween",
+													"parameters": {
+														"tags": "\"\"",
+														"property": "position",
+														"end-x": "topleft025circle2.X",
+														"end-y": "topleft025circle2.Y",
+														"time": "0.2",
+														"ease": "default",
+														"destroy-on-complete": "no",
+														"loop": "no",
+														"ping-pong": "no",
+														"repeat-count": "1"
+													}
+												}
+											],
+											"sid": 860154512261704,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-boolean-instance-variable-set",
+															"objectClass": "Rice",
+															"sid": 984857097730819,
+															"parameters": {
+																"instance-variable": "onPlate"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"callFunction": "AddProgress",
+															"sid": 479615961495610,
+															"parameters": [
+																"Rice.value",
+																"Rice.category"
+															]
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Rice",
+															"sid": 887182018910423,
+															"parameters": {
+																"instance-variable": "onPlate",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 767872886048836
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Rice",
+							"sid": 520777464384087,
+							"parameters": {
+								"object": "topleft025circle2"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Rice",
+							"sid": 511311872930141,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "Self.StartX",
+								"end-y": "Self.StartY",
+								"time": "0.2",
+								"ease": "noease",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 710965771489259,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Rice",
+									"sid": 838756508879416,
+									"parameters": {
+										"instance-variable": "onPlate"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "RemoveProgress",
+									"sid": 231240597154190,
+									"parameters": [
+										"Rice.value",
+										"Rice.category"
+									]
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Rice",
+									"sid": 170638370089479,
+									"parameters": {
+										"instance-variable": "onPlate",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 805876971497496
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 266680713689507,
+					"parameters": {
+						"object": "btnSelesai",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnSelesai",
+					"sid": 425429743316081,
+					"parameters": {
+						"width": "242.67637",
+						"height": "81.186617"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 949459422961343,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnSelesai",
+					"sid": 659802808496468,
+					"parameters": {
+						"width": "262.67637",
+						"height": "101.186617"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 651573879624781,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnSelesai",
+					"sid": 151118911577290,
+					"parameters": {
+						"width": "242.67637",
+						"height": "81.186617"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 690312979486145,
+					"parameters": {
+						"layout": "Result Game"
+					}
+				}
+			],
+			"sid": 906930279050492
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 580233224741599
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "txtKoin",
+					"sid": 250149061933023,
+					"parameters": {
+						"text": "str(koin)"
+					}
+				}
+			],
+			"sid": 973994037519372
+		}
+	],
+	"sid": 733362725647748
+}

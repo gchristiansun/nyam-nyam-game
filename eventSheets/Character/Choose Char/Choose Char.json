@@ -1,0 +1,108 @@
+{
+	"name": "Choose Char",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 550760635671591,
+					"parameters": {
+						"object": "CharacterMale",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 712316607520710,
+					"parameters": {
+						"layout": "Scene Rico"
+					}
+				}
+			],
+			"sid": 754319421106355
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 963329868984889,
+					"parameters": {
+						"object": "btnBack",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 180922436611733,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 254529528568576,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 721200916230823,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 901332442174026,
+					"parameters": {
+						"layout": "Level"
+					}
+				}
+			],
+			"sid": 125701810279016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 498576820982414,
+					"parameters": {
+						"object": "CharacterFemale",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 350483604512375,
+					"parameters": {
+						"layout": "Nauriza's Scene"
+					}
+				}
+			],
+			"sid": 195289826872840
+		}
+	],
+	"sid": 853056848645863
+}

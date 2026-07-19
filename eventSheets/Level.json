@@ -1,5 +1,279 @@
 {
 	"name": "Level",
-	"events": [],
-	"sid": 100678311195035
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 573651603848688,
+					"parameters": {
+						"object": "level1",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "level1",
+					"sid": 442346716754380,
+					"parameters": {
+						"width": "527.686119",
+						"height": "512.250845"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 346262049212259,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "level1",
+					"sid": 796986752725687,
+					"parameters": {
+						"width": "547.686119",
+						"height": "532.250845"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 969031220884151,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "level1",
+					"sid": 826015765547308,
+					"parameters": {
+						"width": "527.686119",
+						"height": "512.250845"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 771363546048682,
+					"parameters": {
+						"layout": "Choose Char"
+					}
+				}
+			],
+			"sid": 490883589833259
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 718426030172081
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "resultKoin",
+					"sid": 513815537958548,
+					"parameters": {
+						"text": "str(koin)"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 829788446410626,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 467534811046051,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result3",
+					"sid": 876596305409288,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 692586966147189
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 388662472593103,
+					"parameters": {
+						"variable": "star_System",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 511913149372800,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 924839134441265
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 651867369289451,
+					"parameters": {
+						"variable": "star_System",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 127904257359063,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 332800237871849,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 516991384138643
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 422611974200112,
+					"parameters": {
+						"variable": "star_System",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "star_result",
+					"sid": 187001141503353,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result2",
+					"sid": 249325307866479,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "star_result3",
+					"sid": 201516825969161,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 293220910955446
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 113669694872624,
+					"parameters": {
+						"object": "btnBack",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 669408309928560,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 670245378499443,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 651431435998783,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 210864954034210,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 254552154122251
+		}
+	],
+	"sid": 369175030707343
 }

@@ -1,0 +1,161 @@
+{
+	"name": "Scene Rico 2",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 134371006100986
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "btnSkip",
+					"sid": 118368300769732,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "bubble_chat_Riko_2",
+					"sid": 947473357415822,
+					"parameters": {
+						"text": "\"Aku berlatih sepak bola dan melakukan berbagai latihan setiap hari, supaya bisa jadi atlet sepak bola yang hebat.\r\n\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 660752362535251,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "btnSkip",
+					"sid": 175972521647635,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 624881642671814
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 646875759505614,
+					"parameters": {
+						"object": "btnSkip",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 294319514809465,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 191833364399801,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 344590855520352,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 793089416637386,
+					"parameters": {
+						"layout": "Scene Rico 3"
+					}
+				}
+			],
+			"sid": 285580163060740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 383614311590200,
+					"parameters": {
+						"object": "btnBack",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 705213511473323,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 733371178304992,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 721215516418173,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 352963693271255,
+					"parameters": {
+						"layout": "Scene Rico"
+					}
+				}
+			],
+			"sid": 735786835629367
+		}
+	],
+	"sid": 392482692983429
+}

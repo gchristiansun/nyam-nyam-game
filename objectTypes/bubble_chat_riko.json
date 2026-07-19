@@ -1,0 +1,10 @@
+{
+	"name": "bubble_chat_riko",
+	"plugin-id": "Text",
+	"sid": 654466206782231,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

@@ -1,0 +1,176 @@
+{
+	"name": "Nauriza's Scene",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "DialogIndex",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 198048479098956
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 574537085410815
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "btnSkip",
+					"sid": 738454613844491,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "dialogNauriza",
+					"sid": 741168870711328,
+					"parameters": {
+						"text": "\"Halo, namaku Nauriza. Sepulang sekolah, aku sering merasa malas bergerak. Aku lebih memilih beristirahat di kamar sambil membuka ponsel.\"",
+						"duration": "5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 699235017385856,
+					"parameters": {
+						"variable": "DialogIndex",
+						"value": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 481747997922822,
+					"parameters": {
+						"seconds": "7",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "btnSkip",
+					"sid": 205439753527937,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 133456588498321
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 285464642796797,
+					"parameters": {
+						"object": "btnSkip",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 257178305436327,
+					"parameters": {
+						"width": "130",
+						"height": "130"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 464731550769016,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 963669968577440,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 847084463604436,
+					"parameters": {
+						"layout": "Nauriza's Scene2"
+					}
+				}
+			],
+			"sid": 872560497998986
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 890875294043719,
+					"parameters": {
+						"object": "btnBack",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 442418170486185,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 759471933794908,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 250643964185026,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 338161303899133,
+					"parameters": {
+						"layout": "Choose Char"
+					}
+				}
+			],
+			"sid": 864542723083982
+		}
+	],
+	"sid": 868127078191823
+}

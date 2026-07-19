@@ -1,0 +1,60 @@
+{
+	"name": "txtNyamHasil",
+	"plugin-id": "Sprite",
+	"sid": 268975155939328,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 907,
+						"height": 682,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8603475,
+						"collisionPoly": {
+							"points": [
+								0.19294377067254687,
+								0.03812316715542522,
+								0.8269018743109151,
+								0.0689149560117302,
+								0.9239250275633958,
+								0.14076246334310852,
+								0.9691289966923925,
+								0.30791788856304986,
+								0.896361631753032,
+								0.9882697947214076,
+								0.050716648291069456,
+								0.9736070381231672,
+								0.017640573318632856,
+								0.19501466275659823,
+								0.09812568908489526,
+								0.06451612903225806
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 141721692917203,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

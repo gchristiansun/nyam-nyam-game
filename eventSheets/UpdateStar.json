@@ -1,0 +1,75 @@
+{
+	"name": "UpdateStar",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "star_System",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 251637608992214
+		},
+		{
+			"functionName": "Updatestar",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"type": "script",
+					"language": "javascript",
+					"script": [
+						"// ===================================",
+						"// UPDATE STAR",
+						"// ===================================",
+						"",
+						"// Hitung seluruh progress bar",
+						"let totalCurrent = 0;",
+						"let totalMax = 0;",
+						"",
+						"const bars = runtime.objects.ProgressFill.getAllInstances();",
+						"",
+						"for (const bar of bars) {",
+						"    totalCurrent += bar.instVars.Current;",
+						"    totalMax += bar.instVars.Max;",
+						"}",
+						"",
+						"// Hindari pembagian 0",
+						"if (totalMax <= 0)",
+						"    return;",
+						"",
+						"// Hitung persentase",
+						"const percent = (totalCurrent / totalMax) * 100;",
+						"",
+						"console.log(\"Total Progress :\", percent.toFixed(2) + \"%\");",
+						"",
+						"// Tentukan jumlah bintang",
+						"if (percent >= 100) {",
+						"    runtime.globalVars.star_System = 3;",
+						"}",
+						"else if (percent >= 75) {",
+						"    runtime.globalVars.star_System = 2;",
+						"}",
+						"else if (percent >= 60) {",
+						"    runtime.globalVars.star_System = 1;",
+						"}",
+						"else {",
+						"    runtime.globalVars.star_System = 0;",
+						"}",
+						"",
+						"console.log(\"Star :\", runtime.globalVars.star_System);"
+					]
+				}
+			],
+			"sid": 338252170145866
+		}
+	],
+	"sid": 887358213772665
+}

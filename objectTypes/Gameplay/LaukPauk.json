@@ -1,0 +1,60 @@
+{
+	"name": "LaukPauk",
+	"plugin-id": "Sprite",
+	"sid": 160760148641937,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 356,
+						"height": 481,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8080109,
+						"collisionPoly": {
+							"points": [
+								0.1797752808988764,
+								0.029106029106029108,
+								0.9831460674157303,
+								0.13097713097713098,
+								0.8539325842696629,
+								0.9958419958419958,
+								0.449438202247191,
+								0.997920997920998,
+								0.08146067415730338,
+								0.975051975051975,
+								0.016853932584269662,
+								0.8877338877338877,
+								0.047752808988764044,
+								0.079002079002079,
+								0.12921348314606743,
+								0.035343035343035345
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 997537862627252,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

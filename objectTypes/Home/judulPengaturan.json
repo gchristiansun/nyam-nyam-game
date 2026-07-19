@@ -1,0 +1,52 @@
+{
+	"name": "judulPengaturan",
+	"plugin-id": "Sprite",
+	"sid": 543635165857154,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 355,
+						"height": 236,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 363847,
+						"collisionPoly": {
+							"points": [
+								0.15690104166666666,
+								0.25,
+								0.9049479166666666,
+								0.296875,
+								0.8430989583333334,
+								0.73046875,
+								0.12174479166666667,
+								0.71484375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 967455196736189,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

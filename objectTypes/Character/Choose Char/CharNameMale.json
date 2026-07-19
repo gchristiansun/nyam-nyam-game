@@ -1,0 +1,60 @@
+{
+	"name": "CharNameMale",
+	"plugin-id": "Sprite",
+	"sid": 310894510205254,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 697,
+						"height": 254,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9297743,
+						"collisionPoly": {
+							"points": [
+								0.13486370157819225,
+								0.23622047244094488,
+								0.8995695839311334,
+								0.2755905511811024,
+								0.9182209469153515,
+								0.32677165354330706,
+								0.9196556671449068,
+								0.7007874015748031,
+								0.8637015781922525,
+								0.7952755905511811,
+								0.10329985652797705,
+								0.7598425196850394,
+								0.07890961262553801,
+								0.6968503937007874,
+								0.08321377331420372,
+								0.31496062992125984
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 563117306506378,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

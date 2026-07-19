@@ -1,0 +1,56 @@
+{
+	"name": "CardMale",
+	"plugin-id": "Sprite",
+	"sid": 421426187906812,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 890,
+						"height": 1052,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9377192,
+						"collisionPoly": {
+							"points": [
+								0.07865168539325842,
+								0,
+								0.9213483146067416,
+								0,
+								1,
+								0.06653992395437262,
+								0.9213483146067416,
+								1,
+								0.07865168539325842,
+								1,
+								0,
+								0.9334600760456274
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 934491317527419,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

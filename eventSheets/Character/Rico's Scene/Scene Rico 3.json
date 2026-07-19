@@ -1,0 +1,161 @@
+{
+	"name": "Scene Rico 3",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 318910986982132
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "btnGamePlay",
+					"sid": 802237557323058,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "bubble_chat_Riko_3",
+					"sid": 659144484034099,
+					"parameters": {
+						"text": "\"Yuk, bantu aku memilih dan memenuhi kebutuhan gizi ku\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 224073236722200,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "btnGamePlay",
+					"sid": 855819717691284,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 245238124499207
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 187634763283315,
+					"parameters": {
+						"object": "btnGamePlay",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnGamePlay",
+					"sid": 267853307804712,
+					"parameters": {
+						"width": "322.420131",
+						"height": "145.928571"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 133414789252496,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnGamePlay",
+					"sid": 583005105638029,
+					"parameters": {
+						"width": "362.420131",
+						"height": "185.928571"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 305486255705518,
+					"parameters": {
+						"layout": "Gameplay"
+					}
+				}
+			],
+			"sid": 759674338072011
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 187984465216830,
+					"parameters": {
+						"object": "btnBack",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 550409579922444,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 571461106664666,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 340588784476506,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 694299867546920,
+					"parameters": {
+						"layout": "Scene Rico 2"
+					}
+				}
+			],
+			"sid": 225283221215019
+		}
+	],
+	"sid": 796135838172139
+}

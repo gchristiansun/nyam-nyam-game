@@ -1,0 +1,161 @@
+{
+	"name": "Scene Rico",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 362592752586599
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "btnSkip",
+					"sid": 886558466168871,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "bubble_chat_riko",
+					"sid": 771694443587011,
+					"parameters": {
+						"text": "\"Halo, namaku Rico. Aku bercita-cita menjadi pemain sepak bola profesional. Setiap hari aku rajin berlatih agar kemampuan dan staminaku semakin baik.\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 814683521764366,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "btnSkip",
+					"sid": 340172729055676,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 645570391024319
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 304810943273318,
+					"parameters": {
+						"object": "btnSkip",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 753739569280854,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 734311806823484,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnSkip",
+					"sid": 126414402123075,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 315878781849348,
+					"parameters": {
+						"layout": "Scene Rico 2"
+					}
+				}
+			],
+			"sid": 347401006387097
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 756739528338198,
+					"parameters": {
+						"object": "btnBack",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 456197120744885,
+					"parameters": {
+						"width": "124",
+						"height": "124"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 574832927170104,
+					"parameters": {
+						"seconds": "0.1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "btnBack",
+					"sid": 429097898830051,
+					"parameters": {
+						"width": "144",
+						"height": "144"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 147624013044600,
+					"parameters": {
+						"layout": "Level"
+					}
+				}
+			],
+			"sid": 422160052516069
+		}
+	],
+	"sid": 369886252721535
+}

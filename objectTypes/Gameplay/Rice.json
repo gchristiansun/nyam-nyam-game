@@ -1,0 +1,131 @@
+{
+	"name": "Rice",
+	"plugin-id": "Sprite",
+	"sid": 670742019850844,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "StartX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 412549392213640
+		},
+		{
+			"name": "StartY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 565460568293336
+		},
+		{
+			"name": "category",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 307615020079755
+		},
+		{
+			"name": "onPlate",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 661179123987822
+		},
+		{
+			"name": "value",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 257190391274460
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 740515097330553
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 441736736822859
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 275,
+						"height": 243,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3351680,
+						"collisionPoly": {
+							"points": [
+								0.4254545454545455,
+								0.06995884773662552,
+								0.6654545454545454,
+								0.102880658436214,
+								0.7127272727272728,
+								0.11934156378600823,
+								0.9381818181818182,
+								0.26337448559670784,
+								0.9709090909090909,
+								0.3004115226337449,
+								1,
+								0.35390946502057613,
+								1,
+								0.5185185185185185,
+								0.850909090909091,
+								0.8436213991769548,
+								0.8145454545454546,
+								0.8806584362139918,
+								0.7527272727272727,
+								0.9300411522633745,
+								0.68,
+								0.9629629629629629,
+								0.5236363636363637,
+								0.9876543209876543,
+								0.36727272727272725,
+								0.9506172839506173,
+								0.10545454545454545,
+								0.6460905349794238,
+								0.05818181818181818,
+								0.5308641975308642,
+								0.04727272727272727,
+								0.4691358024691358,
+								0.04727272727272727,
+								0.39094650205761317,
+								0.05818181818181818,
+								0.34156378600823045,
+								0.08,
+								0.2962962962962963,
+								0.13818181818181818,
+								0.23045267489711935
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 351326510154703,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

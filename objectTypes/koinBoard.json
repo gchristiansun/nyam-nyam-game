@@ -1,0 +1,52 @@
+{
+	"name": "koinBoard",
+	"plugin-id": "Sprite",
+	"sid": 722712436296020,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1261,
+						"height": 427,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7197263,
+						"collisionPoly": {
+							"points": [
+								0.18160190325138778,
+								0.02576112412177986,
+								0.9333862014274386,
+								0.17330210772833723,
+								0.8969072164948454,
+								0.8992974238875878,
+								0.0999206978588422,
+								0.9180327868852459
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 611031737081263,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

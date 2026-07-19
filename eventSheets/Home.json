@@ -2,6 +2,30 @@
 	"name": "Home",
 	"events": [
 		{
+			"eventType": "include",
+			"includeSheet": "Global"
+		},
+		{
+			"eventType": "variable",
+			"name": "isBgmMuted",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 173021704848219
+		},
+		{
+			"eventType": "variable",
+			"name": "popupType",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 505459147418407
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Navigasi Mulai",
@@ -18,6 +42,16 @@
 							"parameters": {
 								"object": "btnMulai",
 								"type": "start"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 729113447794365,
+							"parameters": {
+								"variable": "popupType",
+								"comparison": 0,
+								"value": "0"
 							}
 						}
 					],
@@ -52,7 +86,7 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 421193018073085,
+							"sid": 525134465642305,
 							"parameters": {
 								"layout": "Level"
 							}
@@ -62,184 +96,6 @@
 				}
 			],
 			"sid": 367470052191946
-		},
-		{
-			"eventType": "variable",
-			"name": "Music",
-			"type": "number",
-			"initialValue": "1",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 483749494259155
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Music",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 660105181662149,
-							"parameters": {
-								"variable": "Music",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "btnSoundOff",
-							"sid": 191290067550235,
-							"parameters": {
-								"frame-number": "1"
-							}
-						}
-					],
-					"sid": 773529239528603,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-tag-playing",
-									"objectClass": "Audio",
-									"sid": 313607263563011,
-									"parameters": {
-										"tag": "\"Backsound\""
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 833394881088001,
-									"parameters": {
-										"audio-file": {
-											"path": "_MConverter.eu_music menu"
-										},
-										"loop": "looping",
-										"volume": "-5",
-										"stereo-pan": "0",
-										"tag-optional": "\"Backsound\""
-									}
-								}
-							],
-							"sid": 510138292742598
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 227559881338073,
-							"parameters": {
-								"variable": "Music",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "btnSoundOff",
-							"sid": 136114102320650,
-							"parameters": {
-								"frame-number": "0"
-							}
-						}
-					],
-					"sid": 978895202294596,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 793394739229748
-								}
-							],
-							"actions": [
-								{
-									"id": "stop-all",
-									"objectClass": "Audio",
-									"sid": 131696213023374
-								}
-							],
-							"sid": 562824421352783
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-touched-object",
-							"objectClass": "Touch",
-							"sid": 164774405774915,
-							"parameters": {
-								"object": "btnSoundOff",
-								"type": "start"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-size",
-							"objectClass": "btnSoundOff",
-							"sid": 894883009874145,
-							"parameters": {
-								"width": "219",
-								"height": "147"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 481678762518744,
-							"parameters": {
-								"seconds": "0.1",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-size",
-							"objectClass": "btnSoundOff",
-							"sid": 971741467418241,
-							"parameters": {
-								"width": "210",
-								"height": "137"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 406857227814056,
-							"parameters": {
-								"variable": "Music",
-								"value": "1 - Music"
-							}
-						}
-					],
-					"sid": 928333430900075
-				}
-			],
-			"sid": 265867418333077
 		},
 		{
 			"eventType": "group",
@@ -259,15 +115,26 @@
 								"object": "btnToko",
 								"type": "start"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 934471021902562,
+							"parameters": {
+								"variable": "popupType",
+								"comparison": 0,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-scale",
+							"id": "set-size",
 							"objectClass": "btnToko",
-							"sid": 366760704330674,
+							"sid": 699678080416066,
 							"parameters": {
-								"scale": "0.9"
+								"width": "282",
+								"height": "210"
 							}
 						},
 						{
@@ -280,11 +147,12 @@
 							}
 						},
 						{
-							"id": "set-scale",
+							"id": "set-size",
 							"objectClass": "btnToko",
-							"sid": 884530836631268,
+							"sid": 857186559586647,
 							"parameters": {
-								"scale": "1"
+								"width": "312",
+								"height": "240"
 							}
 						},
 						{
@@ -300,6 +168,618 @@
 				}
 			],
 			"sid": 435493929329875
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Panel",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 813449640583914
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "overlay",
+							"sid": 474117588196215,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "panel",
+							"sid": 489453410845534,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "btnClose",
+							"sid": 578276318652684,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "famBtnPengaturan",
+							"sid": 555359280000790,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "famTxtPengaturan",
+							"sid": 159373947895450,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "famBtnInfo",
+							"sid": 439692028235565,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "famTxtInfo",
+							"sid": 902903352756731,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 349529020757382
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 345590478725057,
+							"parameters": {
+								"object": "btnClose",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "btnClose",
+							"sid": 657635683649840,
+							"parameters": {
+								"width": "105",
+								"height": "99"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 984840575390758,
+							"parameters": {
+								"seconds": "0.1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 223618732238082,
+							"parameters": {
+								"variable": "popupType",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "overlay",
+							"sid": 166076941405063,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "panel",
+							"sid": 353223268835198,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "btnClose",
+							"sid": 568555988886473,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "famBtnPengaturan",
+							"sid": 410357681554426,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "famTxtPengaturan",
+							"sid": 822619889929938,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "famBtnInfo",
+							"sid": 448665994209611,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "famTxtInfo",
+							"sid": 469637514194652,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 946537738850620
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pengaturan",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 497167200560644,
+									"parameters": {
+										"object": "btnSetting",
+										"type": "start"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 928333142662153,
+									"parameters": {
+										"variable": "popupType",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "btnSetting",
+									"sid": 453705868543661,
+									"parameters": {
+										"width": "109.494163",
+										"height": "116.746703"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 643385025423404,
+									"parameters": {
+										"seconds": "0.1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "btnSetting",
+									"sid": 745348405459465,
+									"parameters": {
+										"width": "89.494163",
+										"height": "96.746703"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 971907187229088,
+									"parameters": {
+										"seconds": "0.1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "btnSetting",
+									"sid": 741391904323870,
+									"parameters": {
+										"width": "109.494163",
+										"height": "116.746703"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 178516801577472,
+									"parameters": {
+										"variable": "popupType",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "overlay",
+									"sid": 673598618682921,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "panel",
+									"sid": 587513765673172,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "btnClose",
+									"sid": 994830749397038,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "famBtnPengaturan",
+									"sid": 437409626670744,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "famTxtPengaturan",
+									"sid": 622944684262622,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 335565154885235
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "BGM",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 955986142703506,
+											"parameters": {
+												"variable": "isBgmMuted",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnBGM",
+											"sid": 488406223554892,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 514755940749368,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-tag-playing",
+													"objectClass": "Audio",
+													"sid": 383529667699692,
+													"parameters": {
+														"tag": "\"Backsound\""
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 964864244642008,
+													"parameters": {
+														"audio-file": {
+															"path": "bgm-mainMenu"
+														},
+														"loop": "looping",
+														"volume": "-5",
+														"stereo-pan": "0",
+														"tag-optional": "\"Backsound\""
+													}
+												}
+											],
+											"sid": 557757052943433
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 578621839328860,
+											"parameters": {
+												"variable": "isBgmMuted",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnBGM",
+											"sid": 762700916730574,
+											"parameters": {
+												"frame-number": "0"
+											}
+										}
+									],
+									"sid": 273167249331791,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 981270320694418
+												}
+											],
+											"actions": [
+												{
+													"id": "stop",
+													"objectClass": "Audio",
+													"sid": 914345151858891,
+													"parameters": {
+														"tag": "\"bgm\""
+													}
+												}
+											],
+											"sid": 596724271360756
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-touched-object",
+											"objectClass": "Touch",
+											"sid": 444556927936348,
+											"parameters": {
+												"object": "btnBGM",
+												"type": "start"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "btnBGM",
+											"sid": 371641971727149,
+											"parameters": {
+												"width": "131",
+												"height": "135"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 699423193061814,
+											"parameters": {
+												"seconds": "0.1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-size",
+											"objectClass": "btnBGM",
+											"sid": 766808759569910,
+											"parameters": {
+												"width": "121",
+												"height": "125"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 517928614760764,
+											"parameters": {
+												"seconds": "0.1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-size",
+											"objectClass": "btnBGM",
+											"sid": 871973556922794,
+											"parameters": {
+												"width": "131",
+												"height": "135"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 144825169261852,
+											"parameters": {
+												"variable": "isBgmMuted",
+												"value": "1 - isBgmMuted"
+											}
+										}
+									],
+									"sid": 722780407398045
+								}
+							],
+							"sid": 258447038454182
+						}
+					],
+					"sid": 676031818334834
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Informasi",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 648380249906475,
+									"parameters": {
+										"object": "btnInfo",
+										"type": "start"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 420461584457796,
+									"parameters": {
+										"variable": "popupType",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "btnInfo",
+									"sid": 704738007504375,
+									"parameters": {
+										"width": "122",
+										"height": "114"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 845437338422083,
+									"parameters": {
+										"seconds": "0.1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "btnInfo",
+									"sid": 969241307074149,
+									"parameters": {
+										"width": "142",
+										"height": "134"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 856730642102298,
+									"parameters": {
+										"variable": "popupType",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "overlay",
+									"sid": 289769941738316,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "panel",
+									"sid": 765459365155579,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "btnClose",
+									"sid": 684622609893836,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "famBtnInfo",
+									"sid": 321390434617113,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "famTxtInfo",
+									"sid": 731240978400338,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 606612977946428
+						}
+					],
+					"sid": 862127355973019
+				}
+			],
+			"sid": 466794826698797
 		}
 	],
 	"sid": 524345953350395
